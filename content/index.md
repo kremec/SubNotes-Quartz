@@ -1,6 +1,15 @@
 ---
-title: Welcome to Quartz
+title: SubNotes
 ---
+## Classes
+#### 1 - 1
+[[Diskretne strukture (DS)]]
+[[Osnove matematične analize (OMA)]]
+[[Osnove digitalnih vezij (ODV)]]
+#### 1 - 2
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+#### 2 - 1
+
+#### 2 - 2
+[[Operacijski sistemi (OS)]]
+[[Teorija informacij in sistemov (TIS)]]
