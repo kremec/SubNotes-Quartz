@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "subbyte.net",
-    ignorePatterns: ["private", "Templates/*", ".obsidian", "Tricks/*", "Videos, books & articles/*"],
+    ignorePatterns: [".obsidian", "Templates/*", "Tricks/*", "Tricks", "Videos, books & articles/*"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
