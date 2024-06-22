@@ -13,4 +13,3 @@ title: SubNotes
 #### 2 - 2
 [[Operacijski sistemi (OS)]]
 [[Teorija informacij in sistemov (TIS)]]
-Test
