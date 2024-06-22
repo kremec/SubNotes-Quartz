@@ -1,0 +1,2 @@
+https://github.com/kellwinr/galaxybook_mask
+Scripts in repo will allow mimicking Windows PC as a Galaxy Book laptop to bypass Samsung's restriction on some applications such as Samsung Notes by modifying the registry.
