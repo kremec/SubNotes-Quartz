@@ -1,4 +1,4 @@
-[[SubNotes]] #course
+[[index|SubNotes]] #course
 Year 2 - Semester 2
 - - -
 ## Lectures
