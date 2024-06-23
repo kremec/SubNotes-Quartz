@@ -1,6 +1,7 @@
 ==(Neusmerjen, enostaven) graf==: urejen par $G=(V,E)$:
 - $V$ ... neprazna množica ==točk/vozlišč== grafa $G$
 - $E$ ... množica povezav - parov točk - grafa $G$
+
 Primer: $V=\{u,v,w,x,y\}$ in $E=\{\{u,v\}, \{u,w\}, \{v,w\}, \{v,x\}\}=\{uv,uw,vw,vx\}$
 ```mermaid
 flowchart LR
@@ -26,29 +27,34 @@ $$
 ==Izomorfnost grafov== $G_1,G_2$ - $G_1\cong G_2$: obstaja preslikava $f:V(G_1)\rightarrow V(G_2)$, za katero velja:
 1. $f$ je bijektivna
 2. $uv\in E(G_1) \iff f(u)f(v)\in E(G_2)$
+
 Izomorfizem ohranja število točk, število povezav, stopnje točk, število trikotnikov,sosednost in nesosednost točk, ...
 
 ==Cikel== $C_n$:
 - $V(C_n)=\{v_1, \ ... \ ,v_n\}$ in $|V(C_n)|=n$
 - $E(C_n)=\{v_1v_2,v_2v_3, \ ... \ ,v_{n-1}v_n,v_nv_1\}$ in $|E(C_n)|=n$
 - $deg(v_1)=2$ in $C_n$ je $2$-regularen graf
+
 Primeri: $C_3=K_3$, $C_4=K_{2,2}$
 ==D-razsežna hiperkocka== $Q_d$: točke so zaporedja ničel in enic dolžine $d$ - dve točki/zaporedji sta sosedi, če se razlikujeta v natanko enem členu
 - $|V(Q_d)|=2^d$
 - $|E(Q_d)|=d*2^{d-1}$
 - $Q_d$ je $d$-regularen graf
+
 Primeri: $Q_0=K_1$, $Q_1=K_2$, $Q_2=K_4$
 ### Dvodelen/poln graf
 ==Poln graf== $K_n$: vsaki njegovi točki sta sosedi
 - $V(K_n)=\{v_1, \ ... \ ,v_n\}$ in $|V(K_n)|=n$
 - $E(K_n)=\{v_iv_j; \ 1\leq i\lt j\leq n\}$ in $|E(K_n)|=\frac {n(n-1)} 2$
 - $deg(v_1)=n-1$ in $K_n$ je $(n-1)$-regularen graf
+
 ==Dvodelen graf==: točke grafa lahko pobarvamo z dvema barvama tako, da ima vsaka povezava krajišči različnih barv
 Graf je dvodelen $\iff$ graf ne vsebuje ciklov lihe dolžine
 ==Poln dvodelni graf== na $n+m$ točkah: vsebuje dva ==barvna razreda== z $n$ in $m$ točkami, pri čemer sta točki sosedi, če sta v različnih barvnih razredih
 - $V(K_{m,n})=\{v_1, \ ... \ ,v_m,u_1, \ ... \ ,u_n\}$ in $|V(K_{m,n})|=m+n$
 - $E(K_{m,n})=\{v_iu_j; \ 1\leq i\leq m \ \land \ 1\leq j\leq n\}$ in $|E(K_{m,n})|=m*n$
 - $deg(v_1)=n$, $deg(u_1)=m$ in $K_{m,n}$ je $n$-regularen graf
+
 Primer: $K_{1,1}=K_2$
 ### Podgrafi
 ==Podgraf== $H$ grafa $G$: iz originalnega grafa odstranjujemo točke in/ali povezave -
@@ -67,6 +73,7 @@ $$
 ==Sprehod== $S$ v grafu $G=(V,E)$: zaporedje točk $u_0u_1 \ ... \ u_n$, pri čemer sta zaporedni točki sprehoda sosedi na grafu $G$
 - ==začetek sprehoda==: $u_0$
 - ==konec sprehoda==: $u_n$
+
 ==Dolžina sprehoda== $S=u_0u_1 \ ... \ u_n$: $|S|=n$
 
 ==Razdalja med točkama== $u$ in $v$ $DIST(u,v)$: dolžina najkrajše $u-v$ poti v grafu
@@ -103,6 +110,7 @@ Naj bo $T$ drevo z $n$ točkami in $m$ povezavami:
 - vsaka povezava v $T$ je prerezna
 - za poljubni točki $u,v$ obstaja natančno ena $u-v$ pot
 - če drevesu dodamo kakršnokoli novo povezavo, bo doljeni graf vseboval natanko en cikel
+
 ==Vpeto drevo== $H\subseteq G$: $H$ je vpet podgraf v $G$ in $H$ je drevo
 - $G$ je povezan $\iff$ $G$ ima vsaj eno vpeto drevo
 - $T$ je drevo $\land$ $|V(T)|\geq 2$ $\implies$ $T$ ima vsaj 2 lista
@@ -111,6 +119,7 @@ Naj bo $T$ drevo z $n$ točkami in $m$ povezavami:
 ==Hamiltonov cikel==: cikel, ki:
 - gre skozi vsako točko grafa natanko enkrat in
 - gre skozi posamezno povezavo največ enkrat
+
 ==Hamiltonov graf==: ima Hamiltonov cikel
 ![[DS_Grafi_Hamilton.png]]
 Dokaz, da graf je Hamiltonov: enostavno - poiščemo Hamiltonov cikel

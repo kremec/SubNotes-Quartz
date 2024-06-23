@@ -22,7 +22,6 @@ $$
 flowchart TD
 	A((x)) --> A;
 ```
-<center></center>
 2. Simetričnost:
 $$
 \begin{aligned} \forall x,y\in A \ : \ xRy &\implies yRx \\ R^{-1}&=R \end{aligned}
@@ -101,6 +100,7 @@ Relacija $f\subseteq A\times B$ je ==preslikava== iz A v B, če velja:
 - f je enolična,
 - $D_f=A$
 - $Zf\subseteq B$
+
 Pišemo tudi $f:A\rightarrow B$ oz. $y=f(x)$
 
 Preslikava je:

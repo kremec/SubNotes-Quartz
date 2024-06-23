@@ -3,6 +3,7 @@
 Podajanje množic:
 - naštevanje elementov (npr. $A=\{0,1,2\}$)
 - z [[Predikatni račun|izjavno formulo]] (npr. $A=\{x;\varphi(x)\}$)
+
 ==Prazna množica==: $A=\emptyset$
 
 ==Enakost množic==: $A=B \iff \forall x(x\in A \iff x\in B)$
@@ -107,6 +108,7 @@ Lastnosti:
 - $|\{f; \ f:A\rightarrow B\}|=|B^A|=|B|^{|A|}$
 - $|\mathcal{P}A|=2^{|A|}$
 - $|A\setminus B|=|A|-|A\cap B|$
+
 ==Načelo vljučitev in izključitev==: 
 $$
 \begin{aligned} |A\cup B|&=|A|+|B|-|A\cap B| \\ |A\cup B\cup C|&=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C| \end{aligned}

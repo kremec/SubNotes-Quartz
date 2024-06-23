@@ -10,11 +10,13 @@ Iz formule lahko naredimo izjavo na več načinov:
 ==Kvantifikatorja==:
 - $\forall$ - **univerzalni kvantifikator** ("za vsak")
 - $\exists$ - **eksistenčni kvantifikator** ("obstaja")
+
 Istovrstnim kvantifikatorjem znotraj istega predikata lahko menjaš vrstni red (različnim pa ne)
 Doseg kvantifikatorja je najmanjši možen - najmanjša izjavna formula, ki jo preberemo desno od kvantifikatorja
 Kvantifikator veže svojo spremenljivko in istoimenske proste spremenljivke v svojem dosegu:
 - **prosta spremenljivka** (npr. $x+5$)
 - **vezana spremenljivka** (npr. $\int_1^3 x+5 \ dx$)
+
 Kvantifikatorji imajo isto prednost kot negacija
 
 ==Termi==: drugo ime za konstante in spremenljivke
@@ -40,6 +42,7 @@ $W(x/a)$ - v formuli $W$ vse spremenljivke $x$ nadomestimo z $a$, če se $a$ ne 
 ==Preneksna normalna oblika (PNO)== izjavne formule $W$ je izjavna formula $W_{PNO}$, za katero velja:
 - $W_{PNO}$ je enakovredna $W$
 - $W_{PNO}$ ima na začetku vse kvantifikatorje
+
 Kako do PNO:
 1. Preimenuj vezane spremenljivke v formuli, da vsi kvantifikatorji uporabljajo spremenljivke z raličnimi imeni
 2. Premakni kvantifikatorje proti levi (pri čemer lahko $\implies$ in $\iff$ zamenjaš z $\neg$, $\land$ in $\lor$)
