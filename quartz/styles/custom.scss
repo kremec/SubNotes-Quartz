@@ -1,17 +1,5 @@
 @use "./base.scss";
 
-p {
-    margin-bottom: 0;
-
-    .search & {
-        margin-bottom: initial;
-    }
-}
-
 p + ul {
     margin-top: 0;
-
-    .search & {
-        margin-top: initial;
-    }
 }
