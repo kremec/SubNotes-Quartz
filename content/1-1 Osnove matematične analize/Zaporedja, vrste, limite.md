@@ -37,7 +37,8 @@ Izreki o konvergenci:
 2. naraščajoče zaporedje $a_n$ limitira v $sup(a_n)$, če je navzgor omejeno, sicer limitira v $\infty$
 3. padajoče zaporedje $a_n$ limitira v $inf(a_n)$, če je navzdol omejeno, sicer limitira v $-\infty$
 
-Primer: $$
+Primer:
+$$
 \lim_{n\rightarrow \infty}(1+\frac 1 n)^n=e
 $$
 

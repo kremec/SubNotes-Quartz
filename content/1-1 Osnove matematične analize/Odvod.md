@@ -32,19 +32,20 @@ T(x)=\sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
 $$
 > [!example]- Taylorjeve vrste
 > $$
-\begin{aligned} e^x&=\sum_{n=0}^\infty \frac{x^n}{n!} \\ cosx&=\sum_{n=0}^\infty (-1)^n \frac{x^{2n}}{(2n)!} \\ sinx&=\sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{(2n+1)!} \end{aligned}
-$$
+> \begin{aligned} e^x&=\sum_{n=0}^\infty \frac{x^n}{n!} \\ cosx&=\sum_{n=0}^\infty (-1)^n \frac{x^{2n}}{(2n)!} \\ sinx&=\sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{(2n+1)!} \end{aligned}
 > $$
-e^{ix} = \sum_{n=0}^\infty \frac{(ix)^n}{n!} = \ ... \ = cosx + i*sinx
-$$
-3. Geometrijski pomen prvega odvoda:
+> $$
+> e^{ix} = \sum_{n=0}^\infty \frac{(ix)^n}{n!} = \ ... \ = cosx + i*sinx
+> $$
+
+1. Geometrijski pomen prvega odvoda:
 	- $f'(x)>0$ $\rightarrow$ $f$ je v $x$ naraščajoča
 	- $f'(x)<0$ $\rightarrow$ $f$ je v $x$ padajoča
 	- $f'(x)=0$ $\rightarrow$ $x$ je ==stacionarna točka==:
 		- $f''(x)>0$ $\rightarrow$ lokalni minimum
 		- $f''(x)<0$ $\rightarrow$ lokalni maksimum
 		- $f''(x)=0$ $\rightarrow$ lokalni minimum / lokalni maksimum / sedlo
-4. Geometrijski pomen drugega odvoda:
+2. Geometrijski pomen drugega odvoda:
 	- $f''(x)>0$ $\rightarrow$ $f$ je v $x$ konkavna
 	- $f''(x)<0$ $\rightarrow$ $f$ je v $x$ konveksna
 	- $f''(x)=0$ in se predznak $f''$ v $x$ spremeni $\rightarrow$ $x$ je prevoj
@@ -80,8 +81,8 @@ Gradient je v vseh točkah pravokoten na nivojnice: $\nabla f\cdot (x',y')=0$
 > [!info]- Gradientni spust
 > Iščemo globalni minimum funkcije, z začetnim približkom $x_1$
 > $$
-x_{k+1}=x_k-\gamma*\nabla f(x_k)
-$$
+> x_{k+1}=x_k-\gamma*\nabla f(x_k)
+> $$
 > $\gamma$ ... hitrost učenja (learning rate)
 > Uporaba pri učenju nevronskih mrež: [YT - 3Blue1Brown](https://youtu.be/IHZwWFHWa-w?si=FpnFvHJoTVg9CPXm)
 ### Stacionarne točke

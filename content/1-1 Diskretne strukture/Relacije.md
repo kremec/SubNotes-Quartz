@@ -14,8 +14,8 @@ Grafična predstavitev relacije:
 - Elemente $A$ predstavimo kot točke v ravnini
 - Relacijo med $a$ in $b$ ($aRb$) predstavimo kot usmerjeno puščico od a do b
 ### Lastnosti relacij
-1. Refleksivnost: 
-   $$
+1. Refleksivnost:
+$$
 \begin{aligned} \forall x\in A \ : \ xRx \\ id_A \subseteq R \end{aligned}
 $$
 ```mermaid
@@ -24,7 +24,7 @@ flowchart TD
 ```
 <center></center>
 2. Simetričnost:
-   $$
+$$
 \begin{aligned} \forall x,y\in A \ : \ xRy &\implies yRx \\ R^{-1}&=R \end{aligned}
 $$
 ```mermaid
@@ -33,12 +33,12 @@ flowchart LR
 	C --> B;
 ```
 3. Antisimetričnost:
-   $$
+$$
 \begin{aligned} \forall x,y\in A \ : \ xRy \land yRx &\implies x=y \\ R^{-1}\cap R &\subseteq id_A \end{aligned}
 $$
    <center>(Ni para nasprotno usmerjenih povezav)</center>
 4. Tranzitivnost:
-   $$
+$$
 \begin{aligned} \forall x,y,z\in A \ : \ xRy\land yRz &\implies xRz \\ R^2 &\subseteq R \end{aligned}
 $$
 ```mermaid
@@ -48,12 +48,12 @@ flowchart LR
 	G --> I;
 ```
 5. Sovisnost:
-   $$
+$$
 \begin{aligned} \forall x,y\in A \ : \ x\neq y &\implies xRy \lor yRx \\ id_A \cup R \cup R^{-1} &= U_a \end{aligned}
 $$
    <center>(Vsaki dve točki sta povezani)</center>
 6. Enoličnost:
-   $$
+$$
 \begin{aligned} \forall x,y,z \in A \ : \ xRy \land xRz &\implies y=z \\ R^{-1} * R &\subseteq id_A \end{aligned}
 $$
    <center>(Iz vsake točke gre največ ena puščica)</center>

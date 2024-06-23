@@ -28,7 +28,7 @@ Primer: $gcd(765,646)=?$
 ![[DS_TeorijaŠtevil_REA.png]]
 Rezultat predzadnje vrstice ($17$) je $gcd$, pozitivni del vsote v zadnji vrstici ($29070$) pa je $lcm$
 
-Koda #algoritem:
+Koda algoritma:
 ```c++
 int gcd(int m, int n, int & s, int & t) {
     if (m == 0) {

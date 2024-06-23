@@ -55,7 +55,8 @@ Primer: $K_{1,1}=K_2$
 $$
 \begin{aligned} V(H)\subseteq V(G) \\ E(H)\subseteq E(G) \end{aligned}
 $$
-==Vpet podgraf==: iz originalnega grafa odstranjujemo samo povezave - $$
+==Vpet podgraf==: iz originalnega grafa odstranjujemo samo povezave -
+$$
 V(H)=V(G)
 $$
 ==Induciran podgraf==: iz originalnega grafa odstranjujemo samo točke - skupaj s povezavami, ki se jih dotikajo - za vsako povezavo $e=uv\in E(G)$ velja

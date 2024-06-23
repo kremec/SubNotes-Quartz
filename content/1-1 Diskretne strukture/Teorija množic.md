@@ -33,46 +33,60 @@ Tako $\emptyset$ kot $A$ pripadata $\mathcal{P}A$
 $A^n := A\times A\times \ ... \ \times A$
 ### Enakosti množic
 (podobno kot [[Izjave#Zakoni izjavnega računa|zakoni izjavnega računa]])
-1. Zakon dvojnega komplementa:  $$
+1. Zakon dvojnega komplementa: 
+$$
 \begin{aligned} (A^C)^C&=A \end{aligned}
 $$
-2. Idempotenca: $$
+2. Idempotenca:
+$$
 \begin{aligned} A \cap A &= A \\ A \cup A &= A \end{aligned}
 $$
-3. Komutativnost: $$
+3. Komutativnost:
+$$
 \begin{aligned} A \cap B &= B \cap A \\ A \cup B &= B \cup A \\ A + B &= B + A \end{aligned}
 $$
-4. Asociativnost: $$
+4. Asociativnost:
+$$
 \begin{aligned} (A \cap B) \cap C &= A \cap (B \cap C) \\ (A \cup B) \cup C &= A \cup (B \cup C) \\ (A + B) + C &= A + (B + C) \end{aligned}
 $$
-5. Absorpcija: $$
+5. Absorpcija:
+$$
 \begin{aligned} A \cap (A \cup B) &= A \\ A \cup (A \cap B) &= A \end{aligned}
 $$
-6. Distributivnost: $$
+6. Distributivnost:
+$$
 \begin{aligned} (A \cap B) \cup C &= (A \cup C) \cap (B \cup C) \\ (A \cup B) \cap C &= (A \cap C) \cup (B \cap C) \\ (A+B)\cap C &= (A\cap C) + (B\cap C) \end{aligned}
 $$
-7. de Morganova zakona: $$
+7. de Morganova zakona:
+$$
 \begin{aligned} (A \cup B)^C &= A^C \cap B^C \\ (A \cap B)^C &= A^C \cup B^C \end{aligned}
 $$
-8. Kontrapozicija: $$
+8. Kontrapozicija:
+$$
 \begin{aligned} A \subseteq B &= B^C \subseteq A^C \end{aligned}
 $$
-9. Lastnosti prazne množice $\emptyset$ in univerzalne množice $S$: $$
+9. Lastnosti prazne množice $\emptyset$ in univerzalne množice $S$:
+$$
 \begin{aligned} A \cup A^C &= S \\ A \cap A^C &= \emptyset \\ A+A &= \emptyset \\ A+A^C &= S \end{aligned}
 $$
-10. Še lastnosti $\emptyset$ in $S$: $$
+10. Še lastnosti $\emptyset$ in $S$:
+$$
 \begin{aligned} A \cap \emptyset &= \emptyset \\ A \cup \emptyset &= A \\ A \cap S &= A \\ A \cup S &= S \end{aligned}
 $$
-11. Lastnosti vsebovanosti: $$
+11. Lastnosti vsebovanosti:
+$$
 \begin{aligned} A \subseteq B \sim A\cup B=B &\sim A\cap B=A \sim A \setminus B=\emptyset \\ A \subseteq B &\implies A\cup C \subseteq B\cup C \\ A \subseteq B &\implies A \cap C \subseteq B \cap C \\ A\cap B &\subseteq A \\ B &\subseteq A \cup B \end{aligned}
 $$
-12. Lastnosti razlike množic: $$
+12. Lastnosti razlike množic:
+$$
 \begin{aligned} A\setminus B &= A\cap B^C \end{aligned}
 $$
-13. Lastnosti simetrične razlike: $$
+13. Lastnosti simetrične razlike:
+$$
 \begin{aligned} A+B &= (A\setminus B) \cup (B\setminus A) \\ A+B &= (A\cup B)\setminus (A \cap B) \end{aligned}
 $$
-14. Lastnosti kartezičnega produkta: $$
+14. Lastnosti kartezičnega produkta:
+$$
 \begin{aligned} A\times B &\neq B\times A \\ A\times(B\cup C) &= (A\times B) \cup (A\times C) \\ (A\cup B)\times C &= (A\times C) \cup (B\times C) \\ (A\cap B)\times C &= (A\times C) \cap (B\times C) \\ (A\cap B)\times (C\cap D) &= (A\times C) \cap (B\times D) \\ \\ A\times B=\emptyset &\iff A=\emptyset \lor B=\emptyset \\ A \subseteq C \land B \subseteq D &\implies A\times B \subseteq C\times D \\ A\times B \subseteq C\times D \land A\times B \neq \emptyset &\implies A\subseteq C \land B\subseteq D \end{aligned}
 $$
 
