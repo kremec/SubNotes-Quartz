@@ -1,5 +1,6 @@
 ==Kod==: preslikava osnovna abeceda A $\rightarrow$ kodirna abeceda B
-- ==Povprečna dolžina koda==: $$
+- ==Povprečna dolžina koda==:
+$$
 L=\sum_{i=1}^n p_il_i
 $$
 - ==Kodno drevo==: listi - vozlišča, ki predstavljajo kodne zamenjave
