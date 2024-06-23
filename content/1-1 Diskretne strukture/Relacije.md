@@ -35,7 +35,7 @@ flowchart LR
 $$
 \begin{aligned} \forall x,y\in A \ : \ xRy \land yRx &\implies x=y \\ R^{-1}\cap R &\subseteq id_A \end{aligned}
 $$
-   <center>(Ni para nasprotno usmerjenih povezav)</center>
+(Ni para nasprotno usmerjenih povezav)
 4. Tranzitivnost:
 $$
 \begin{aligned} \forall x,y,z\in A \ : \ xRy\land yRz &\implies xRz \\ R^2 &\subseteq R \end{aligned}
@@ -50,12 +50,12 @@ flowchart LR
 $$
 \begin{aligned} \forall x,y\in A \ : \ x\neq y &\implies xRy \lor yRx \\ id_A \cup R \cup R^{-1} &= U_a \end{aligned}
 $$
-   <center>(Vsaki dve točki sta povezani)</center>
+(Vsaki dve točki sta povezani)
 6. Enoličnost:
 $$
 \begin{aligned} \forall x,y,z \in A \ : \ xRy \land xRz &\implies y=z \\ R^{-1} * R &\subseteq id_A \end{aligned}
 $$
-   <center>(Iz vsake točke gre največ ena puščica)</center>
+(Iz vsake točke gre največ ena puščica)
 ### Operacije z relacijami
 Poleg navadnih operacij množic definiramo:
 ==Komplement==: $R^C:=(A\times A)\setminus R = U_A \setminus R$
