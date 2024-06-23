@@ -35,7 +35,9 @@ Dogovor o prioriteti operatorjev: $$\neg \ \lt \  \land,\uparrow,\downarrow \ \l
 - izraz $A \iff B$ je tavtologija
 # Zakoni izjavnega računa
 1. Zakon dvojne negacije: 
-$$\begin{aligned} \neg\neg A &\sim A \end{aligned}$$
+$$
+\begin{aligned} \neg\neg A &\sim A \end{aligned}
+$$
 3. Idempotenca: $$\begin{aligned} A \land A &\sim A \\ A \lor A &\sim A \end{aligned}$$
 4. Komutativnost: $$\begin{aligned} A \land B &\sim B \land A \\ A \lor B &\sim B \lor A \\ A \iff B &\sim B \iff A \end{aligned}$$
 5. Asociativnost: $$\begin{aligned} (A \land B) \land C &\sim A \land (B \land C) \\ (A \lor B) \lor C &\sim A \lor (B \lor C) \\ (A \iff B) \iff C &\sim A \iff (B \iff C) \end{aligned}$$
