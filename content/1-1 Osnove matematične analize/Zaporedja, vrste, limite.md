@@ -7,7 +7,7 @@ Podajanje zaporedij:
 - ==eksplicitno==: $a_n=f(n) \ ; \ f:\mathbb N \mapsto \mathbb R$
 - ==rekurivno==: $a_{n+k}=f(a_n,a_{n+1}, \ ... \ , a_{n+k})$
 
-> [!info]- Collatzeva domneva / domneva $3n+1$
+> [!info]- Collatzeva domneva / domneva 3n+1
 > Za poljubno pozitivno celo število sta na voljo dve operaciji:
 > - če je število sodo, se ga deli z 2
 > - če je število liho, se ga pomnoži s 3 in prišteje 1
@@ -68,13 +68,15 @@ $m$-ta delna vsota $S_m=a_1+a_ 2+ \ ... \ +a_m=\sum_{n=1}^{m}a_n$
 Obrat trditve n velja - ==harmonična vrsta==: $\sum_{n=1}^\infty \frac 1 n$ = ... [(dokaz divergence)](https://youtu.be/4yyLfrsSXQQ?si=JqurdL9esQaiG9LJ) ... = $\infty$
 
 ==Geometrijska vrsta==:
-$$\sum_{n=1}^\infty a_0*q^n = a_0*(q+q^2+ \ ...)=
+$$
+\sum_{n=1}^\infty a_0*q^n = a_0*(q+q^2+ \ ...)=
 \left\{
 	\begin{array}{ll}
 		\frac {a_0} {1-q} &;\ |q|\lt 1 \\
 		divergira &;\ sicer
 	\end{array}
-\right.$$
+\right.
+$$
 
 Računanje vrst: naj bosta $\sum_{n=1}^\infty a_n$ in $\sum_{n=1}^\infty b_n$ konvergentni.
 Tedaj sta konvergentni:

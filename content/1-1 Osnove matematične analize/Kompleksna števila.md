@@ -35,17 +35,18 @@ $z_1*z_2= \ ... \ = |z_1|*|z_2|*e^{i(\varphi_1+\varphi_2)}$
 ==Eulerjeva formula==: $e^{i\varphi}=cons\varphi+i*sin\varphi$
 
 Za $\pm$ se splača uporabljati kartezični zapis, za množenje in korenjenje pa polarni zapis
+
 Operacije v polarnem zapisu:
-Konjugiranje: $\bar z=\bar{r*e^{i\varphi}}=r*e^{-e\varphi}$
-Potenciranje - De Moivre: $z^n=(r*e^{i\varphi})^n=r^n*e^{in\varphi}$
-Deljenje: $\frac{z_1}{z_2}=\frac{r_1*e^i\varphi_1}{r_2*e^i\varphi_2}=\frac{r_1}{r_2} * e^{i(\varphi_1-\varphi_2)}$
+- Konjugiranje: $\bar z=\bar{r*e^{i\varphi}}=r*e^{-e\varphi}$
+- Potenciranje - De Moivre: $z^n=(r*e^{i\varphi})^n=r^n*e^{in\varphi}$
+- Deljenje: $\frac{z_1}{z_2}=\frac{r_1*e^i\varphi_1}{r_2*e^i\varphi_2}=\frac{r_1}{r_2} * e^{i(\varphi_1-\varphi_2)}$
 
 Operacije v ravnini:
-Zrcaljenje preko $Re$: $z\mapsto \bar z$
-Zrcaljenje preko $0$: $z\mapsto -z$
-Razteg za faktor r: $z\mapsto z*r$
-Premik za $z_0$: $z\mapsto z+z_0$
-Vrtenje za kot $\varphi$: $z\mapsto z*e^{i\varphi}$
+- Zrcaljenje preko $Re$: $z\mapsto \bar z$
+- Zrcaljenje preko $0$: $z\mapsto -z$
+- Razteg za faktor r: $z\mapsto z*r$
+- Premik za $z_0$: $z\mapsto z+z_0$
+- Vrtenje za kot $\varphi$: $z\mapsto z*e^{i\varphi}$
 
 Korenjenje:
 ==Koreni enote==: rešitve $z^n=1$, rešitev je $n$ in tvorijo pravilni $n$-kotnik
