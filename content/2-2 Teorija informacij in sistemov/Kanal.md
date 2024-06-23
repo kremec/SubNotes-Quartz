@@ -57,5 +57,5 @@ $k$ podatkovnih bitov, $m$ kontrolnih bitov, $n$ vseh poslanih bitov v bloku; $M
 $$
 R= \frac{max \ H(X^n)}{n}=\frac{log(M)}{n}
 $$
-==Za $R\leq C$ obstaja kod, ki zagotavlja tako prevajanje informacije, da je verjetnost napake pri dekodiranju poljubno majhna==
+==Za== $R\leq C$ ==obstaja kod, ki zagotavlja tako prevajanje informacije, da je verjetnost napake pri dekodiranju poljubno majhna==
 Za $R\gt C$ tak kod ne obstaja

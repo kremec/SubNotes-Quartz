@@ -1,3 +1,4 @@
+#TODO-EXAMPLES #TODO-LINKS FOURIEROVA TRANSORMACIJA V PRAKSI ZA SIGNALE
 ### Invariantnost sinusoid
 Vhodni signal:
 $$
@@ -52,7 +53,6 @@ Lastnosti Fourierove transformacije:
 - ==premik==: $f(t)=x(t-t_0) \rightarrow F(\nu)=e^{-i2\pi\nu t_0}*X(\nu)$
 - ==modulacija==: $f(t)=e^{i2\pi t\nu_0}*x(t) \rightarrow F(\nu)=X(\nu-\nu_0)$
 - ==konvolucija==: $f(t)=\int_{-\infty}^{\infty}x(t-\tau)y(\tau)d\tau \rightarrow F(\nu)=X(\nu)Y(\nu)$
-<br><br><br>
 #### Resonanca
 Do resonance pride, ko je frekvenca vsiljenega nihanja enaka frekvenci lastnega nihanja $\rightarrow$ pride do ojačitve aplitud
 #### Modulacija in frekvenčni premik

@@ -4,6 +4,7 @@
 3. Kumulativne verjetnosti:  $P_k=\sum_{i=1}^{k-1}p_i$
 4. Kodno besedo predstavlja prvih $l_i$ znakov za decimalno vejico $P_k$
 ![[TIS_Stiskanje_ShannonovKod.png|350]]
+
 Shannon: Več osnovnih znakov združujemo v sestavljene znake, bolj se približujemo entropiji (a imamo zmeraj več znakov - ==kombinaciska eksplozija==)
 ### Fanojev kod
 1. Znake razvrstimo po padajočih vrednostih
@@ -16,6 +17,7 @@ Združevanje:
 1. Vzamemo $r$ najmanj verjetnih znakov
 2. Združimo jih v sestavljeni znak, katerega verjetnost je vsota verjetnosti vzetih znakov
 3. Postopek ponovimo, dokler ne ostane 1 znak
+
 Razdruževanje:
 1. Sestavljeni znak razstavimo v znake, iz katerih smo ga sestavili
 2. Vsakemu priredimo enznak kodne abecede (veje)
@@ -28,7 +30,7 @@ Razdruževanje:
 - Najdaljše kodne besede so v $r$-terčkih najmanj verjetnih znakov
 - Osnovni kod = $L$ $\rightarrow$ kod z združenima znakoma = $L-1*(p_a+p_b)$
 - Pri združevanju dobimo dva sestavljena znaka $L=1$, bolj optimalen kod bi moram imeti manjši $L$ (kar ni mogoče)
-<br><br><br><br><br>
+
 Paziti moramo na neizrabljene veje - preveri, ali je dovolj $n$ znakov:
 $$
 n=r+k(r-1); k\in \mathbb N_0
@@ -75,6 +77,7 @@ Referenca:
 Predelan LZ:
 - $1$ ali $2$ ponovljena osnovna znaka $\rightarrow$ osnovni znak
 - $\geq 3$ ponovljeni osnovni znaki $\rightarrow$ par (odmik, dolžina)
+
 Potrebujemo 2 kodni tabeli:
 - ==tabela znakov==: $[0, 255]$ - osnovni znaki (dolžine 1), $256$ - konec bloka, $257$ - dolžine 3, ..., $264$ - dolžine 10, ...
 - ==tabela odmikov==: 5b enakomerni kod + do 13 dodatnih bitov (do 32000)
@@ -83,8 +86,8 @@ Niz znakov se razdeli na bloke, vsak blok se kodira na enega od treh načinov:
 - brez stiskanja - osnovni znaki se prepišejo
 - statični Huffman (vnaprej podane verjetnosti - hitrejše)
 - Huffman (verjetnosti izračunamo - bolj stisnjeno)
+
 Vsak blok ima glavo: 1b za označbo zadnjega bloka, 2b za tip stiskanja, v 3. primeru drevo (uporabimo kanonični Huffman za standardizacijo)
-<div style="page-break-after: always;"></div><br><br>
 ### LZW
 Doseže optimalno stiskanje, a rabimo velik slovar
 
@@ -98,7 +101,8 @@ npr. `aaaabbc` $\rightarrow$ `4a2b1c`
 - 1b za: 0 - verižno kodiranje / 1 - brez kodiranja
 - št. znakov
 - znak
-Npr. `05a 04d 13edf` $\rightarrow$ `aaaaaddddedf`
+
+Primer:  `05a 04d 13edf` $\rightarrow$ `aaaaaddddedf`
 ## Stiskanje z izgubami
 Učinkovito pri slikah in zvoku - upoštevanje nepopolnosti človeških čutil
 ==Kompresijsko razmerje==:

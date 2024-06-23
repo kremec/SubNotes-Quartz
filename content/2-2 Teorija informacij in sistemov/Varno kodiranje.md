@@ -9,6 +9,7 @@ Nastavljeni so, da je vsota bitov po modulu 2 fiksna vrednost ($0$ ali $1$)
 #### Pravokotni in trikotni kod
 ==Pravokotni kod==: sodost po vrsticah in stolpcih
 - Zaznavanje in popravljanje 1 napake
+
 ==Trikotni kod==: vsota elementov v stolpcu in vrstici s paritetnim bitom mora biti soda
 - Zaznavanje in popravljanje 1 napake, a z manj kontrolnimi biti - boljša hitrost
 ![[TIS_VarnoKodiranje_PravokotniTrikotniKod.png|300]]

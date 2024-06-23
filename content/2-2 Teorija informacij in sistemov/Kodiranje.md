@@ -7,6 +7,7 @@ $$
 - ==Razvrstitev kodov==:
 ![[TIS_Kodiranje_RazvrstitevKodov.png|350]]
 ![[TIS_Kodiranje_RazvrstitevKodovTabela.png|400]]
+
 ==Singularni kodi== (5): različnim znakom je prirejena ista kodna zamenjava
 ==Enakomerni kodi==: dolžina vseh kodnih zamenjav je enaka
 ==Enoznačni kodi== (1): poljuben niz znakov lahko dekodiramo le na en sam način
