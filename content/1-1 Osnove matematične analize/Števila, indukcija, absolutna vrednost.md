@@ -33,4 +33,5 @@ $$
 		x &;\ x \geq 0 \\
 		-x &;\ x < 0
 	\end{array}
-\right.$$
+\right.
+$$
