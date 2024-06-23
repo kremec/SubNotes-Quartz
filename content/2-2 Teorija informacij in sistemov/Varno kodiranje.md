@@ -16,17 +16,27 @@ Nastavljeni so, da je vsota bitov po modulu 2 fiksna vrednost ($0$ ali $1$)
 ==Hammingova razdalja med kodnima zamenjavama==: št. znakov, po katerih se razlikujeta (primerjaš 1., 2. itd. zaporedni znak in šteješ razlike)
 
 ==Hammingova razdalja koda==:
-$$d_H=min \ d(\vec{x_a}, \vec{x_b})$$
+$$
+d_H=min \ d(\vec{x_a}, \vec{x_b})
+$$
 Pove nam, koliko napak lahko:
 - odkrijemo
-$$e_{MAX}=d_H-1$$
+$$
+e_{MAX}=d_H-1
+$$
 - popravimo
-$$f_{MAX}=\lfloor \frac{d_H-1}{2} \rfloor$$
+$$
+f_{MAX}=\lfloor \frac{d_H-1}{2} \rfloor
+$$
 ### Hammingov pogoj
 Da bi pravilno dekodirali vse kodne zamenjave, kjer je prišlo do $e$ ali manj napak, mora veljati:
-$$M \leq \frac{2^n}{\sum_{i=0}^{f} \binom n i}$$
+$$
+M \leq \frac{2^n}{\sum_{i=0}^{f} \binom n i}
+$$
 oz.
-$$št.\ različnih\ sporočil \leq \frac{vse\ možnosti}{velikost\ otoka}$$
+$$
+št.\ različnih\ sporočil \leq \frac{vse\ možnosti}{velikost\ otoka}
+$$
 <br><br><br>
 ### Linearni bločni kodi
 ==Linearni bločni kodi== $L(n,k)$:
@@ -35,28 +45,46 @@ $$št.\ različnih\ sporočil \leq \frac{vse\ možnosti}{velikost\ otoka}$$
 
 ==Hammingova razdalja linearnega koda== = št. enic v kodni zamenjavi z najmanj enicami
 ==Generatorska matrika==: $G$ dimenzij $k * n$
-$$\vec x = \vec z * G$$
+$$
+\vec x = \vec z * G
+$$
 ==Paritetna matrika==: $H$ dimenzij $m*n$ (dobimo jo iz enačb)
 ![[TIS_VarnoKodiranje_LinearniBločniKodi.png|450]]
-$$\vec x * H^T = 0 \iff H*\vec{x^t}=0$$
-$$G*H^T=0$$
+$$
+\vec x * H^T = 0 \iff H*\vec{x^t}=0
+$$
+$$
+G*H^T=0
+$$
 
 ==Sistematični kodi==: podatkovni in varnostni biti v $G$ so ločeni: $G=(I_k \ | \ A) \ \ oz. \ \ G=(A \ | \ I_k)$
 #### Sindrom
 Ko se v kanalu zgodijo napake, prejemnik zaradi njih ne more takoj preveriti podatkov
 Izračunamo ==sindrom== in preverimo, kje se je zgodila napaka: $\vec s = \vec 0$ - ni napake, v primeru $\gt 1$ napak pa lahko poslabšamo
-$$\vec s = \vec y * H^T = \vec e * H^T$$
+$$
+\vec s = \vec y * H^T = \vec e * H^T
+$$
 Ker je verjetnost dveh (ali več) napak veliko manjša od verjetnosti ene napake, popravljamo samo enojne
 ### Hammingov kod
 $H(2^m-1, 2^m-1-m)$ zna popraviti 1 napako
 ### Ciklični kodi
 $C(n,k)$ je LBK, v katerem vsak krožni premik kodne zamenjave da drugo kodno zamenjavo, in nobena kodna zamenjava ne manjka
 #### Zapis s polinomi
-$$x(p)=x_{n-1}p^{n-1}+ \ ... \ + x_1p + x_0$$
+$$
+x(p)=x_{n-1}p^{n-1}+ \ ... \ + x_1p + x_0
+$$
 Krožni premik polinoma za $i$ mest:
-$$x^i(p) = p^i*x(p) \ \ mod \ \ (p^n+1)$$
+$$
+x^i(p) = p^i*x(p) \ \ mod \ \ (p^n+1)
+$$
 #### Generatorski in paritetni polinom
-$$g(p)=1p^m+g_{m-1}p^{m-1}+ \ ... \ +g_1p+1$$
+$$
+g(p)=1p^m+g_{m-1}p^{m-1}+ \ ... \ +g_1p+1
+$$
 Krožni premiki: $[g(p), p*g(p), p^2g(p), ...]$
-$$g(p)*h(p)=0 \ \ mod \ \ (p^n-1)$$
-$$x(p)*h(p)=0$$
+$$
+g(p)*h(p)=0 \ \ mod \ \ (p^n-1)
+$$
+$$
+x(p)*h(p)=0
+$$

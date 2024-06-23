@@ -2,7 +2,9 @@
 Funkcija $F$ je ==nedoločeni integral== [[Funkcije|funkcije]] $f$, če velja: $F'(x)=f(x)$ - [[Odvod|odvod]] integrala je osnovna $f$
 Nedoločeni integral je na vsakem intervalu določen do konstante natančno: $(f(x)+C)' = f'(x)$ (glej [[Odvod#Osnovni odvodi in pravila odvajanja|pravila odvajanja]]) $\rightarrow$ oba $f(x)$ in $f(x)+C$ sta nedoločena inetgrala
 ### Osnovni integrali in pravila nedoločenega integriranja
-$$\begin{aligned} \int a \ dx&=ax+C \\ \int x^n \ dx&=\begin{cases} \frac{x^{n+1}}{n+1} + C \ \ \ ; n \ne -1 \\ ln|x|+C \ \ \ ;n=-1 \end{cases} \\ \int a^x \ dx&=\frac{a^x}{ln\ a}+C \\ \int sin\ x \ dx&=-cos\ x + C \\ \int cos\ x \ dx&=sin\ x + C \\ \int log_ax \ dx&=xlog_ax-\frac x{ln\ a} + C \end{aligned}$$
+$$
+\begin{aligned} \int a \ dx&=ax+C \\ \int x^n \ dx&=\begin{cases} \frac{x^{n+1}}{n+1} + C \ \ \ ; n \ne -1 \\ ln|x|+C \ \ \ ;n=-1 \end{cases} \\ \int a^x \ dx&=\frac{a^x}{ln\ a}+C \\ \int sin\ x \ dx&=-cos\ x + C \\ \int cos\ x \ dx&=sin\ x + C \\ \int log_ax \ dx&=xlog_ax-\frac x{ln\ a} + C \end{aligned}
+$$
 - Linearnost: $\int (f(x)+\alpha*g(x)) \ dx=\int f(x) \ dx + \alpha*\int g(x) \ dx$
 - Vpeljava nove spremenljivke
 - Integriranje po delih - ==per partes==: $\int u \ dv = uv-\int v \ du$
@@ -15,9 +17,13 @@ Funkcija $f$ je ==integrabilna== $\iff$ obstaja določeni integral
 Vsaka zvezna funkcija je integrabilna
 ![[OMA_Integral_DoločeniIntegral.png|400]]
 ### Pravila določenega integriranja
-$$\begin{aligned} \int_a^b (\alpha*f(x)+g(x)) \ dx&=\alpha*\int_a^b f(x) \ dx + \int_a^b g(x) \ dx \\ \int_a^b f(x)\ dx &= -\int_b^af(x)\ dx \\ \int_a^b|f(x)|\ dx &\ge |\int_a^bf(x)\ dx| \\ \int_a^bf(x)\ dx &= \int_a^cf(x)\ dx + \int_c^bf(x)\ dx \\ \text{f liha}\ &\implies \int_{-a}^af(x)\ dx = 0 \\ \text{f soda}\ &\implies \int_{-a}^af(x)\ dx = 2*\int_0^af(x)\ dx \\ \mu(f)&=\frac{1}{b-a}*\int_a^bf(x)\ dx \end{aligned}$$
+$$
+\begin{aligned} \int_a^b (\alpha*f(x)+g(x)) \ dx&=\alpha*\int_a^b f(x) \ dx + \int_a^b g(x) \ dx \\ \int_a^b f(x)\ dx &= -\int_b^af(x)\ dx \\ \int_a^b|f(x)|\ dx &\ge |\int_a^bf(x)\ dx| \\ \int_a^bf(x)\ dx &= \int_a^cf(x)\ dx + \int_c^bf(x)\ dx \\ \text{f liha}\ &\implies \int_{-a}^af(x)\ dx = 0 \\ \text{f soda}\ &\implies \int_{-a}^af(x)\ dx = 2*\int_0^af(x)\ dx \\ \mu(f)&=\frac{1}{b-a}*\int_a^bf(x)\ dx \end{aligned}
+$$
 ==Newton-Leibnitzova formula==: $F$ ... nedoločeni integral $f$
-$$\int_\alpha^\beta(x)\ dx=F(\beta)+c-(F(\alpha)+c) = F(\beta)-F(\alpha)$$
+$$
+\int_\alpha^\beta(x)\ dx=F(\beta)+c-(F(\alpha)+c) = F(\beta)-F(\alpha)
+$$
 ### Prostornina vrtenine
 ![[OS_Integral_Vrtenina.png|400]]
 Prostornina: $V=\pi*\int_a^bf^2(x)\ dx$

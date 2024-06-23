@@ -30,7 +30,9 @@ Razdruževanje:
 - Pri združevanju dobimo dva sestavljena znaka $L=1$, bolj optimalen kod bi moram imeti manjši $L$ (kar ni mogoče)
 <br><br><br><br><br>
 Paziti moramo na neizrabljene veje - preveri, ali je dovolj $n$ znakov:
-$$n=r+k(r-1); k\in \mathbb N_0$$
+$$
+n=r+k(r-1); k\in \mathbb N_0
+$$
 ![[TIS_Stiskanje_HuffmanovKodNeizrabljenost.png|500]]
 ### Kanonični Huffmanov kod
 Enolična določitev Huffmanovega drevesa
@@ -100,7 +102,9 @@ Npr. `05a 04d 13edf` $\rightarrow$ `aaaaaddddedf`
 ## Stiskanje z izgubami
 Učinkovito pri slikah in zvoku - upoštevanje nepopolnosti človeških čutil
 ==Kompresijsko razmerje==:
-$$R=\frac{stisnjen \ binarni \ zapis}{binarni \ zapis}$$
+$$
+R=\frac{stisnjen \ binarni \ zapis}{binarni \ zapis}
+$$
 ### JPEG
 Shema: $Y \ C_r \ C_b$ - svetlost in dve barvi, svetlost je pomembnejša
 1. Aprokcimacija vsake komponente z **DCT**

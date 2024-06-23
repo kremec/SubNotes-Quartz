@@ -26,9 +26,13 @@ Kvantifikatorji imajo isto prednost kot negacija
 ==Splošno veljavna izjavna formula==: resnična v vsaki interpretaciji (ustreza tavotogliji iz [[Izjave#Izjave|izjav]])
 ==Neizpolnljiva izjavna formula==: neresnična v vsaki interpretaciji (ustreza protislovju iz [[Izjave#Izjave|izjav]])
 ## Zakoni predikatnega računa
-$$\begin{aligned} \neg \forall xW &\sim \exists x\neg W \\ \neg \exists xW &\sim \forall x\neg W \\ \\ \forall x \forall yW &\sim \forall y \forall xW \\ \exists x \exists yW &\sim \exists y \exists xW \\ \\ \forall x(W \land V) &\sim \forall xW \land \forall xV \\ \exists x(W \lor V) &\sim \exists xW \lor \exists xV  \end{aligned}$$
+$$
+\begin{aligned} \neg \forall xW &\sim \exists x\neg W \\ \neg \exists xW &\sim \forall x\neg W \\ \\ \forall x \forall yW &\sim \forall y \forall xW \\ \exists x \exists yW &\sim \exists y \exists xW \\ \\ \forall x(W \land V) &\sim \forall xW \land \forall xV \\ \exists x(W \lor V) &\sim \exists xW \lor \exists xV  \end{aligned}
+$$
 Če se $x$ ne pojavi (prosto) v formuli $C$, veljajo tudi naslednje enakovrednosti:
-$$\begin{aligned} \forall x(C \lor W) &\sim C \lor \forall xW \\ \exists x(C \lor W) &\sim C \lor \exists xW \\ \\ \forall x(C \land W) &\sim C \land \forall xW \\ \exists x(C \land W) &\sim C \land \exists xW \\ \\ \forall x(W \implies C) &\sim \exists xW \implies C \\ \forall x(C \implies W) &\sim C \implies (\forall xW) \end{aligned}$$
+$$
+\begin{aligned} \forall x(C \lor W) &\sim C \lor \forall xW \\ \exists x(C \lor W) &\sim C \lor \exists xW \\ \\ \forall x(C \land W) &\sim C \land \forall xW \\ \exists x(C \land W) &\sim C \land \exists xW \\ \\ \forall x(W \implies C) &\sim \exists xW \implies C \\ \forall x(C \implies W) &\sim C \implies (\forall xW) \end{aligned}
+$$
 
 $W(x/a)$ - v formuli $W$ vse spremenljivke $x$ nadomestimo z $a$, če se $a$ ne pojavi drugje v $W$
 Če je $W$ formula imen prostih spremenljivk ne smemo preimenovati, vezane pa lahko

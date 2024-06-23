@@ -1,9 +1,13 @@
 Lastna informacija: opisuje dogodek, ki se je zgodil
 ==Lastna verjetnost==:
-$$I_i = -log_b(p_i)$$$b=\{2\rightarrow bit, \ 3\rightarrow trit, \ ...\}$ ... uporabljena baza
+$$
+I_i = -log_b(p_i)
+$$$b=\{2\rightarrow bit, \ 3\rightarrow trit, \ ...\}$ ... uporabljena baza
 
 ==Entropija==: ocena količine informacije / povprečje vseh lastnih verjetnosti
-$$H(X)=\sum_{i=1}^{n}p_iI_i$$
+$$
+H(X)=\sum_{i=1}^{n}p_iI_i
+$$
 Lastnosti:
 - zvezna
 - simetrična $\rightarrow$ vrstni red parametrov ni pomemben

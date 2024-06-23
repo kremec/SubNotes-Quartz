@@ -21,7 +21,9 @@ Lastnosti:
 Načini zapisa:
 ==Kartezični zapis==: $z=x+yi \ ; \ x,y\in \mathbb R$
 ==Polarni zapis==:
-$$\begin{aligned} z&=|z|*(cos(\varphi)+i*sin(\varphi))\\&=|z|*e^{i\varphi} \end{aligned}$$
+$$
+\begin{aligned} z&=|z|*(cos(\varphi)+i*sin(\varphi))\\&=|z|*e^{i\varphi} \end{aligned}
+$$
 - $|z|=\sqrt{x^2+y^2}$ ... razdalja do $0$
 - $\varphi=arctan \frac y x (+\pi)$ ... kot ($\pi$ dodamo v $3.$ in $4.$ kvadrantu)
 - $e^{i\varphi}$ ... enotska krožnica
@@ -48,4 +50,6 @@ Vrtenje za kot $\varphi$: $z\mapsto z*e^{i\varphi}$
 Korenjenje:
 ==Koreni enote==: rešitve $z^n=1$, rešitev je $n$ in tvorijo pravilni $n$-kotnik
 $n$-ti koreni enote:
-$$\begin{aligned} z_n&=e^{i\frac{2k\pi}{n}} \\ w_i&=\sqrt[n]r*e^{i\frac{\varphi+2k\pi}{n}} \end{aligned}$$
+$$
+\begin{aligned} z_n&=e^{i\frac{2k\pi}{n}} \\ w_i&=\sqrt[n]r*e^{i\frac{\varphi+2k\pi}{n}} \end{aligned}
+$$

@@ -1,6 +1,8 @@
 # Zaporedja
 ==Zaporedje==: preslikava $\mathbb N \mapsto \mathbb R$ oz. $n \mapsto a_n$
-$$(a_n)_n=(a_1,a_2, \ ...)$$
+$$
+(a_n)_n=(a_1,a_2, \ ...)
+$$
 Podajanje zaporedij:
 - ==eksplicitno==: $a_n=f(n) \ ; \ f:\mathbb N \mapsto \mathbb R$
 - ==rekurivno==: $a_{n+k}=f(a_n,a_{n+1}, \ ... \ , a_{n+k})$
@@ -35,7 +37,9 @@ Izreki o konvergenci:
 2. naraščajoče zaporedje $a_n$ limitira v $sup(a_n)$, če je navzgor omejeno, sicer limitira v $\infty$
 3. padajoče zaporedje $a_n$ limitira v $inf(a_n)$, če je navzdol omejeno, sicer limitira v $-\infty$
 
-Primer: $$\lim_{n\rightarrow \infty}(1+\frac 1 n)^n=e$$
+Primer: $$
+\lim_{n\rightarrow \infty}(1+\frac 1 n)^n=e
+$$
 
 Zaporedje:
 - ==narašča preko vsake meje==: $\forall M\in \mathbb R \ \exists N\in \mathbb R \ : \ a_n\gt M, \ \forall n\in N$  oz.  $\lim_{n\rightarrow \infty}a_n=\infty$

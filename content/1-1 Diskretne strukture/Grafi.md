@@ -17,7 +17,9 @@ Graf je ==d-regularen==: vsa vozlišča $G$ so stopnje $d$
 - ==Kubični graf==: 3-regularen graf
 
 ==Lema o rokovanju==: Graf $G$ ima $n$ točk in $m$ povezav. Tedaj velja:
-$$\sum_{i=1}^ndeg(v_i)=2*m$$
+$$
+\sum_{i=1}^ndeg(v_i)=2*m
+$$
 - V vsakem grafu je sodo mnogo točk lihe stopnje
 - $G$ je d-regulared graf z $n$ točkami in $m$ povezavami $\implies$ $n*d=2*m$
 
@@ -50,10 +52,16 @@ Graf je dvodelen $\iff$ graf ne vsebuje ciklov lihe dolžine
 Primer: $K_{1,1}=K_2$
 ### Podgrafi
 ==Podgraf== $H$ grafa $G$: iz originalnega grafa odstranjujemo točke in/ali povezave -
-$$\begin{aligned} V(H)\subseteq V(G) \\ E(H)\subseteq E(G) \end{aligned}$$
-==Vpet podgraf==: iz originalnega grafa odstranjujemo samo povezave - $$V(H)=V(G)$$
+$$
+\begin{aligned} V(H)\subseteq V(G) \\ E(H)\subseteq E(G) \end{aligned}
+$$
+==Vpet podgraf==: iz originalnega grafa odstranjujemo samo povezave - $$
+V(H)=V(G)
+$$
 ==Induciran podgraf==: iz originalnega grafa odstranjujemo samo točke - skupaj s povezavami, ki se jih dotikajo - za vsako povezavo $e=uv\in E(G)$ velja
-$$u,v\in V(G) \implies e=uv\in E(G)$$
+$$
+u,v\in V(G) \implies e=uv\in E(G)
+$$
 ### Sprehodi v grafih
 ==Sprehod== $S$ v grafu $G=(V,E)$: zaporedje točk $u_0u_1 \ ... \ u_n$, pri čemer sta zaporedni točki sprehoda sosedi na grafu $G$
 - ==začetek sprehoda==: $u_0$

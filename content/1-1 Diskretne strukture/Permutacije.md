@@ -3,7 +3,9 @@
 ==Simetrična grupa reda== $n$: množica $S_n$ vseh permutacij reda $n$
 
 1. Zapis permutacije s ==tabelo== - v spodnji vrstici so slike števil zgornje vrstice:
-$$\varphi= \left(\begin{matrix} 1&2&3&4&5&6&7 \\ 2&3&4&1&7&6&5 \end{matrix}\right)$$
+$$
+\varphi= \left(\begin{matrix} 1&2&3&4&5&6&7 \\ 2&3&4&1&7&6&5 \end{matrix}\right)
+$$
 ==Identiteta==: $id=\left(\begin{matrix} 1&2&\cdots&7 \\ 1&2&\cdots&7 \end{matrix}\right)$
 ==Produkt permutacij== $\alpha$ in $\beta$ - $\alpha*\beta$: Najprej uporabiš preslikavo $\alpha$, nato pa na dobljenem še $\beta$
 ==Inverzna permutacija== $\alpha^{-1}$: Zamenjaš vrstici (in urediš stolpce zgornje vrstice po vrsti)
@@ -28,7 +30,9 @@ flowchart LR
 
 Za ==potenciranje permutacij== je ugodnejši zapis z disjunktnimi cikli - dovolj je poznati potence ciklov:
 Naj bo $\pi=\alpha_1*\alpha_2* \ ... \ *\alpha_m$ permutacija z disjunktnimi cikli $\alpha_i$. Potem je:
-$$\pi^k=\alpha_1^k*\alpha_2^k* \ ... \ *\alpha_m^k$$
+$$
+\pi^k=\alpha_1^k*\alpha_2^k* \ ... \ *\alpha_m^k
+$$
 
 Naj bo $\alpha$ permutacija enega samega cikla dolžine $n$:
 - $\alpha^k$ je sestavljena iz $gcd(n,k)$ disjunktnih ciklov dolžin $\frac n {gcd(n,k)}$
