@@ -2,7 +2,8 @@ Lastna informacija: opisuje dogodek, ki se je zgodil
 ==Lastna verjetnost==:
 $$
 I_i = -log_b(p_i)
-$$$b=\{2\rightarrow bit, \ 3\rightarrow trit, \ ...\}$ ... uporabljena baza
+$$
+$b=\{2\rightarrow bit, \ 3\rightarrow trit, \ ...\}$ ... uporabljena baza
 
 ==Entropija==: ocena količine informacije / povprečje vseh lastnih verjetnosti
 $$
