@@ -1,1 +1,9 @@
 @use "./base.scss";
+
+:not(.search) > p {
+    margin-bottom: 0;
+}
+
+:not(.search) > p + ul {
+    margin-top: 0;
+}
