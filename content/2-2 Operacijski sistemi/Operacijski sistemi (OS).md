@@ -35,6 +35,5 @@ Sočasnost in medprocesna sinhronizacija
 - [[Niti]]
 - [[Sočasnost]]
 - [[Vzajemno izključevanje]]
-- [[Sinhronizacija]]
 ## Lab
 - [[(V) Lupina in bash]]

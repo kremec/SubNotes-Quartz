@@ -5,6 +5,7 @@
 - ==Sočasnost brez vzporednosti==: večopravilnost - prepletanje izvajanja ukazov
 - ==Sočasnost z vzporednostjo==: prekrivanje izvajanja ukazov (večprocesorski sistem)
 - ==Vzporednost brez sočasnosti==: vzporednost na nivoju ukazov
+
 Težave: deljenje globalnih virov, smrtni objem, ...
 
 Odnosi med procesi:
@@ -28,5 +29,5 @@ Sočasna uporaba vira s strani več procesov $\rightarrow$ lahko pride do nepri�
 ==Staranje==: procesom, ki ne dobijo vira, vsake toliko časa povečamo prioriteto
 
 ==Smrtni objem (deadlock)==: procesi ne morejo nadaljevati izvajanja, ker ciklično čakajo drug na drugega
-Zaznavanje: ignoriranje (npr. Unix, Windows)
-Reševanje: ukinjanje nekega procesa v ciklu / obnavljanje stanja (rollback) / ...
+- Zaznavanje: ignoriranje (npr. Unix, Windows)
+- Reševanje: ukinjanje nekega procesa v ciklu / obnavljanje stanja (rollback) / ...

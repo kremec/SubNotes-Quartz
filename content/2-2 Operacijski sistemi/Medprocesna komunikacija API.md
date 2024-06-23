@@ -3,6 +3,7 @@
 - bralnim koncem `fd[0]`$\rightarrow$ `read(fd[0])`
 - pisalnim koncem `fd[1]`$\rightarrow$ `write(fd[1])`
 ![[OS_MedprocesnaKomunikacijaAPI_Cev.png|300]]
+
 Komunikacija preko cevi je omejena na procese z istim potomcem (tipično starš - otroci)
 
 ==Cevovod (pipeline)==: zaporedna uporaba cevi s strani otrok istega starša
@@ -18,6 +19,7 @@ Sporočila so lahko različno dolga, vsako ima identifikator vrste
 
 ==Segment (deljeni kos pomnilnika)==: z vidika procesa sklenjen kos okvirjev strani
 - ==sistemsko pogojen==: OS omejuje št. segmentov in skupno velikost deljenega pomnilnika
+
 Potek komunikacije: ustvarjanje - priklopi in odklopi segmentov - sprostitev
 
 ### Vtičnice
@@ -25,6 +27,7 @@ Posredna dvosmerna medprocesna in mrežna komunikacija (tipično odjemalec - str
 - Strežnik vzpostavi vtičnico na znanem naslovu in čaka na zahteve odjemalcev
 - Odjemalec se poveže na vtičnico $\rightarrow$ izmenjava sporočil
 ![[OS_MedprocesnaKomunikacijaAPI_Vtičnice.png|250]]
+
 Vrste vtičnic:
 - ==AF_LOCAL==: lokalna vtičnica (naslavljanje preko datoptek brez posebnih protokolov)
 - ==AF_INET==: internetni protokol v4 (TCP, UDP, IP, ICMP, ...)

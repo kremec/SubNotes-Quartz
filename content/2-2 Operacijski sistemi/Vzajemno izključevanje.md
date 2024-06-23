@@ -9,6 +9,7 @@ Težave: sočasnost preverjanja stanja ključavnice
 - ==izolacija od drugih sočasnih procesov== - noben drug proces ne more prekiniti operacije in imeti vpogleda v vmesno stanje
 - ==vzajemno izključevanje== - izvede se le ena naenkrat
 - ==obvoz medpomnilnika==
+
 Težava: strojni ukazi navadno niso atomično - kako jo zagotoviti?
 ### Strojna izvedba
 ==Onemogočanje prekinitev==: vstop v KO - onemogočimo prekinitve, ob izstopu jih nazaj omogočimo
@@ -19,6 +20,7 @@ Namenski strojni ukazi:
 - `compare & swap`: če je trenutna rednost enaka testni vrednosti zamenj z novo vrednostjo, sicer vrne staro vrednost
 - `exchange`: zamenjava dveh vrednosti
 - `fetch & add`: poveča vrednost in vrne staro vrednost
+
 Prednosti: delujej na večprocesorskih sistemih, enostavnost, podpirajo več KO
 Težave: vrteče čakanje zapravlja procesorski čas, možna stradanje in smrtni objem
 ### Programska izvedba

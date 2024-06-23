@@ -18,6 +18,7 @@ OS je proces, ki ne teče vedno $\rightarrow$ prožimo ga s prekinitvami:
 - **prekinitve in izjeme** (npr. sistemska ura, V/I dogodek, zgrešitve strani, deljenje z 0, ...)
 - sistemski klici (npr. ustvarjanje procesa, branje datoteke, ...)
 ![[OS_Večopravilnost_Neomejeno.png|400]]
+
 ==Omejeno neposredno izvajanje==: "inicializiraj PSP in rokovalnik sistemskih klicev, poženi program in čakaj na vrnitev nadzora OS"
 ![[OS_Večopravilnost_Omejeno.png|400]]
 ### Preklop procesa

@@ -32,7 +32,8 @@ Ostale mere: izkoriščenost procesorja, prepustnost sistema - št. obdelanih pr
 #### Prednostni algoritmi
 Upoštevanje prioritet procesov
 - ==HPF (Highest Priority First)==: pripravljeni proces z najvišjo prioriteto
-  Razvrščevalnik brez ali z prevzemanjem: ![[OS_Razvrščanje_HPF.png|450]]  Težava ==stradanja==: procesi z nižjo prioriteto ne pridejo na vrsto
+  Razvrščevalnik brez ali z prevzemanjem: ![[OS_Razvrščanje_HPF.png|450]]
+  Težava ==stradanja==: procesi z nižjo prioriteto ne pridejo na vrsto
   Rešitev ==staranja==: procesom, ki ne dobijo procesorja, vsake toliko povečamo prioriteto
 - ==SIRO (Service In Random Order)==: razvrščanje po neki shemi naključnosti
   Razvrščevalnik brez ali z prevzemanjem

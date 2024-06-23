@@ -1,3 +1,4 @@
+#TODO-LINKS 
 ## Pomnilnik
 ==Fizični pomnilnik== (PA): s procesorjem fizično povezan pomnilnik
 ==**Naslovni prostor**== (VA): OS abstrakcija fizičnega pomnilnika, kot ga procesi vidijo
@@ -47,6 +48,7 @@ Strojna podpora preslikovanja in preverjanja zaščite, manipulacija regstrov v 
 ==Segmentacija==:
 - bloki - segmenti različnih velikosti, imajo pomen (koda, podatki, ...)
 - težavno upravljanje pomnilnika, zunanja fragmentacija
+
 ==Ostranjevanje==:
 - bloki - strani enake velikosti, brez pomena
 - lažje upravljanje pomnilnika, notranja fragmentacija
@@ -65,6 +67,7 @@ Zato uporabimo zunanji pomnilnik (diski) kot ==odlagalni prostor (swap space)==:
 
 
 - ==Zgrešitev strani==: naloži stran iz zunanjega pomnilnika, osveži vnos v preslikovalni tabeli strani, ...
+
 Če je za stran premalo prostorav pomnilniku, naredi zamenjavo strani:
 - ==FIF (Furthest in future)==: izločitev strani, ki bo dostopana najdlje v prihodnosti (nemogoče vedeti vnaprej)
 - ==FIFO (First In First Out)==: izločitev strani, ki je najdlje v pomnilnmiku (lahko spet takoj rabimo)
