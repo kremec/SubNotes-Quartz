@@ -9,6 +9,7 @@ Naj bo $A\subset \mathbb R, \ A\neq \emptyset$:
 $A$ je ==navzdol omejena==, če obstaja zgornja meja za $A$: $M\in \mathbb R \ : \ M\geq a; \ \forall a\in A$
 - ==Supremum== $sup(A)$: najmanjša zgornja meja omejene množice
    ==Maksimum== $max(A)$: supremum znotraj množice $A$
+
 $A$ je ==navzgor omejena==, če obstaja spodnja meja za $A$: $m\in \mathbb R \ : \ m\leq a; \ \forall a\in A$
 - ==Infimum== $inf(A)$: največja spodnja meja omejene množice
    ==Minimum== $min(A)$: infimum znotraj množice $A$
@@ -16,6 +17,7 @@ $A$ je ==navzgor omejena==, če obstaja spodnja meja za $A$: $m\in \mathbb R \ :
 Princip indukcije: Za $A\subseteq \mathbb N$ naj velja:
 1. $n_0\in A$
 2. $\forall k\in \mathbb N \ : \ k\in A \implies k+1\in A$
+
 Tedaj torej velja $A=\{n_0,n_1, \ ...\}$
 
 Shema uporabe:
@@ -24,7 +26,8 @@ Radi bi dokazali trditev $T(n)$ za $\forall n\in \mathbb N$
 2. Dokažemo ==indukcijski korak==: predpostavimo $T(k)$ in izpeljemo $T(k+1)$
 ## Absolutna vrednost
 ==Absolutna vrednost== $x\in \mathbb R$: oddaljenost $x$ od $0$:
-$$|x| =
+$$
+|x| =
 \left\{
 	\begin{array}{ll}
 		x &;\ x \geq 0 \\
