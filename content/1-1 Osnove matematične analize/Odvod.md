@@ -109,4 +109,5 @@ Stacionarne točke $L$ so kandidati za vezane ekstreme:
 - $L_x=f_x-\lambda g_x = 0$
 - $L_y=f_y-\lambda g_y = 0$
 - $L_\lambda = g = 0$ (predpostavljen pogoj)
+
 [YT - Khan Academy](https://youtu.be/yuqB-d5MjZA?si=Z0kOHDR_YIns2OUP) - več na to temo

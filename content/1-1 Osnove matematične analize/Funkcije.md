@@ -74,6 +74,7 @@ Lastnosti zveznosti:
    Sicer izberemo stran, pri kateri sta predznaka različna:
    $f(x_{n+1}*f(a_n)\lt 0 \ \rightarrow$  vzamemo $[a_n,x_{n+1}]$, saj je ničla nekje vmes
    $f(x_{n+1})*f(b_n)\lt 0 \ \rightarrow$  vzamemo $[x_{n+1},b_n]$, saj je ničla nekje vmes
+
 Ta algoritem naj bi (ponavadi) našel ničlo hitreje kot pri bisekciji
 
 ==Sekantna metoda== - Regula falsi brez $f(a)*f(b)\lt 0$

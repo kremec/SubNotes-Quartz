@@ -1,6 +1,6 @@
 ### Windows
 Stvaritev procesa:
-`
+```
 CreateProcess(
   ime programa,
   ukazna vrstica,
@@ -10,7 +10,7 @@ CreateProcess(
   trenutni imenik,
   zagonske informacije, procesne informacije
 )
-`
+```
 Končanje procesa:
 `ExitProcess(status)`
 `TerminateProcess(process, status)`

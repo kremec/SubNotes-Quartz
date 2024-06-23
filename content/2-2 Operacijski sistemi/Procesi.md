@@ -24,9 +24,11 @@ Končanje procesa:
 Stanje procesa:
 ![[OS_Procesi_StanjeProcesa.png|500]]
 ==Nov==: tekom stvaritve in inicializacije
+
 Aktiven:
 - ==pripravljen==: pripravljen na izvajanje - čakanje na dodelite procesorja
 - ==izvajan==: dejansko izvajanje na procesorju
+
 Nekativen:
 - ==čakajoč/blokiran==: čakanje na nek dogodek, potreben za nadaljevanje procesa
 ==Končan==: tekom ukinjanja in sprostitve virov

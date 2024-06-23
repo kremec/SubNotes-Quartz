@@ -27,8 +27,10 @@ Avtentikacijski dejavniki:
 ==Ostali uporabniki==: običajno uid > 999, domač imenik /home/username
 
 Datoteka ==/etc/passwd==: vse razen podatkov o geslu
-![[OS_Uporabniki_passwd.png|500]]Datoteka ==/etc/shadow==: zgoščene vrednosti gesel, uporaba **soli**
+![[OS_Uporabniki_passwd.png|500]]
+Datoteka ==/etc/shadow==: zgoščene vrednosti gesel, uporaba **soli**
 ![[OS_Uporabniki_shadow.png|500]]
 
 Datoteka ==/etc/group==: seznam uporabnikov v skupinah
-![[OS_Uporabniki_group.png|550]]Datoteka ==/etc/gshadow==: zgoščena gesla skupin
+![[OS_Uporabniki_group.png|550]]
+Datoteka ==/etc/gshadow==: zgoščena gesla skupin
