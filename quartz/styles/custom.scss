@@ -1,3 +1,10 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+.markdown-rendered ul, .markdown-rendered ol {
+    margin-block-start: -15px;
+    margin-block-end: -10px;
+}
+
+.markdown-rendered ul ul, .markdown-rendered ol ol {
+    margin-block-start: inherit;
+}
