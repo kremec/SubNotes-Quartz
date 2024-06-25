@@ -1,5 +1,5 @@
 ---
-title: SubNotes
+title: FRI UNI
 ---
 ## Classes
 #### 1 - 1
