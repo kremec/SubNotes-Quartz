@@ -26,7 +26,7 @@ Zaporedje je: (podobno kot pri [[Števila, indukcija, absolutna vrednost#Števil
 - ==(strogo) naraščajoče==: $a_{n+1} \ (\geq)\gt \ a_n$
 - ==(strogo) padajoče==: $a_{n+1} \ (\leq)\lt \ a_n$
 - ==monotono==: je naraščajoče ali padajoče
-# Limite
+# Limite in konvergenca
 $\lim_{n\rightarrow \infty}a_n=a$ : $a\in \mathbb R$ je ==limita zaporedja== $(a_n)_n$, če $\forall \epsilon\gt 0 \exists N\in\mathbb R: \ |a_n-a|\lt \epsilon, \ \forall n\geq N$
 
 ==Konvergentno zaporedje==: ima limito
@@ -77,7 +77,7 @@ $$
 	\end{array}
 \right.
 $$
-
+### Računanje konvergence
 Računanje vrst: naj bosta $\sum_{n=1}^\infty a_n$ in $\sum_{n=1}^\infty b_n$ konvergentni.
 Tedaj sta konvergentni:
 - $\sum_{n=1}^\infty (a_n+b_n)=\sum_{n=1}^\infty a_n + \sum_{n=1}^\infty b_n$
@@ -87,8 +87,7 @@ Dominiranje vrst: naj vrsta $\sum_{n=1}^\infty a_n$ dominira vrsto $\sum_{n=1}^\
 Tedaj:
 - $\sum_{n=1}^\infty a_n$ konvergira $\implies$ $\sum_{n=1}^\infty b_n$ konvergira  (če je omejena večja vrsta, bo tudi manjša)
 - $\sum_{n=1}^\infty b_n$ divergira $\implies$ $\sum_{n=1}^\infty a_n$ divergira        (če je neomejena manjša vrsta, bo tudi večja)
-
-Konvergenčni kriteriji:
+#### Konvergenčni kriteriji
 1. ==Kvocientni kriterij==: $L=\lim_{n\rightarrow \infty} \frac{a_{n+1}}{a_n}$
    - $L \lt 1 \implies$ vrsta $\sum_{n=1}^\infty a_n$ konvergira
    - $L \gt 1 \implies$ vrsta $\sum_{n=1}^\infty a_n$ divergira

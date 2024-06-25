@@ -8,15 +8,13 @@ Podajanje predpisa funkcij:
 - ==eksplicitno==: $y=f(x)$                      (npr. $y=\sqrt{1-x^2}$)
 - ==implicitno==: $F(x,y)=0$                   (npr. $x^2+y^2-1=0$)
 - ==parametrično==: $x=x(t), \ y=y(t)$   (npr. $x=cos(t)$)
-
-Operacije nad funkcijami:
+#### Operacije
 - $x\mapsto f(x)+g(x)$  ... vsota $f+g$
 - $x\mapsto f(x)-g(x)$  ... razlika $f-g$
 - $x\mapsto f(x)*g(x)$   ... produkt $fg$
 - $x\mapsto \frac{f(x)}{g(x)}$             ... kvocient $\frac f g$
 - $(g\circ f)(x)=g(f(x)) \ ; \ Z_f\subseteq D_g$  ... kompozitum $f\circ g$
-
-Transformacije funkcij:
+#### Transformacije
 - $g(x)=f(x-a)$ ... vodoravni premik za $|c|$
 - $g(x)=f(x)+c$ ... navpični premik za $|c|$
 - $g(x)=f(\frac x a)$      ... vodoravni razteg/skrček za faktor $c$
@@ -24,7 +22,8 @@ Transformacije funkcij:
 - $g(x)=-f(x)$    ... zrcaljenje preko $x$ osi
 - $g(x)=f(-x)$    ... zrcaljenje preko $y$ osi
 
-Lastnosti funkcij: (podobno kot pri [[Relacije#Preslikave|preslikavah]])
+#### Lastnosti
+(Podobno kot pri [[Relacije#Preslikave|preslikavah]]):
 - ==soda==: $f(-x)=f(x) \ ; \ \forall x\in D_f$
 - ==liha==: $f(-x)=-f(x) \ ; \ \forall x\in D_f$
 - ==injektivna==: različni točki $x_1\neq x_2 \in D_f$ preslika v različni vrednosti $f(x_1)\neq f(x_2) \in Z_f$
@@ -34,11 +33,11 @@ Lastnosti funkcij: (podobno kot pri [[Relacije#Preslikave|preslikavah]])
 ==Inverzna funkcija==: $f^{-1}(x)=y \iff f(y)=x$, $f$ mora biti injektivna
 Izračun: zamenjamo vse $x$-e in $y$-e (dobimo $x=f(y)$) in izrazimo $y$ kot funkcijo $x$
 Graf: prezrcalimo graf funkcije $f$ prekosimetrale lihih kvadrantov
-# Limite funkcij in zveznost
+### Limite funkcij
 [[Zaporedja, vrste, limite#Limite|Limita]] funkcije: $\lim_{x\rightarrow a}f(x)=b \ \iff \ \forall\epsilon\gt 0 \ \exists \delta\gt 0 \ : \ \forall x\in (a-\delta,a+\delta)$ velja $f(x)\in(b-\epsilon,b+\epsilon)$
 Naraščanje preko vseh meja: $\lim_{x\rightarrow a}f(x)=\infty$
 Padanje pod vsako mejo: $\lim_{x\rightarrow a}f(x)=-\infty$
-
+### Zveznost funkcij
 Funkcija $f$ je zvezna v $a\in D_f$, če $f(a)=\lim_{x\rightarrow a}f(x)$
 Primer nezvezne funkcije:
 $$
@@ -58,7 +57,7 @@ Lastnosti zveznosti:
   - je graf $f$ nepretrgana krivulja
   - sta zvezni $f+g$ in $f*g$
   - lahko zamenjamo vrstni red računanja limite v $a$ in vrednosti funkcije
-# Numerično reševanje enačb - iskanje ničel
+## Numerično reševanje enačb - iskanje ničel
 ==Bisekcija== - ideja: $f(a)*f(b)\lt 0\implies f$ ima ničlo na $[a,b]$
 1. Izberemo začetna približka $a$ in $b$, in naj velja $f(a)*f(b)\lt 0$ (različno predznačena)
 2. Induktivno izračunamo naslednje približke: $x_{n+1}=\frac{a_n+b_n}{2}$ (vmesna točka med levo in desno mejo iskanja)

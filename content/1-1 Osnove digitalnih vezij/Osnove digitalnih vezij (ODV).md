@@ -4,3 +4,5 @@ Year 1 - Semester 1
 ## Lectures
 - [[Boolova algebra]]
 - [[Preklopne funkcije in vezja]]
+- [[Funkcijsko poln sistem]]
+- [[Minimizacija preklopnih funkcij]]

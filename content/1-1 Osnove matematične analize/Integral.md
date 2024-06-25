@@ -1,4 +1,4 @@
-# Nedoločeni integral
+## Nedoločeni integral
 Funkcija $F$ je ==nedoločeni integral== [[Funkcije|funkcije]] $f$, če velja: $F'(x)=f(x)$ - [[Odvod|odvod]] integrala je osnovna $f$
 Nedoločeni integral je na vsakem intervalu določen do konstante natančno: $(f(x)+C)' = f'(x)$ (glej [[Odvod#Osnovni odvodi in pravila odvajanja|pravila odvajanja]]) $\rightarrow$ oba $f(x)$ in $f(x)+C$ sta nedoločena inetgrala
 ### Osnovni integrali in pravila nedoločenega integriranja
@@ -10,7 +10,7 @@ $$
 - Integriranje po delih - ==per partes==: $\int u \ dv = uv-\int v \ du$
 - Parcialni ulomki: $\frac{Ax+B}{(x-a)(x-b)}=\frac{\alpha}{(x-a)}+\frac{\beta}{(x-b)}$ ... izrazi $\alpha$ in $\beta$ kot dela originalne funkcije in novo vsoto ulomkov vnesi v originalen integral
 - [[Odvod#Taylorjev polinom|Taylorjeva vrsta]]: na območju konvergence Taylorjeve vrste lahko vrsto členoma integriramo
-# Določeni integral
+## Določeni integral
 ==Riemannova vsota==: $I_n=\sum_{i=1}^n\Delta_nx \ \ ; x\in[a+(i-1)\Delta_nx, a+i\Delta_nx]$
 Določen integral funkcije $f$ na intervalu $[a,b]$: $lim_{n\to \infty}I_n=\int_a^bf(x) \ dx$
 Funkcija $f$ je ==integrabilna== $\iff$ obstaja določeni integral
@@ -29,7 +29,7 @@ $$
 Prostornina: $V=\pi*\int_a^bf^2(x)\ dx$
 Površina plašča: $P=\pi*\int_a^bf(x)\sqrt{1+(f'(x))^2}\ dx$
 Dolžina krivulje: $l(\gamma)=\int_a^b||\gamma'(t)||\ dt$
-# Posplošeni integral
+## Posplošeni integral
 ![[OMA_Itegral_PosplošeniIntegral.png|300]]
 Integral do pola: $\int_a^bf(x)\ dx = \lim_{t\searrow a}\int_t^bf(x)\ dx$
 Integral v neskončnosti: $\int_a^\infty f(x)\ dx = \lim_{t\nearrow \infty}\int_a^tf(x)\ dx$

@@ -1,4 +1,3 @@
-# Množice
 ==Relacija pripadnosti==: $x\in A$ ("$x$ pripada $A$")
 Podajanje množic:
 - naštevanje elementov (npr. $A=\{0,1,2\}$)
@@ -32,7 +31,7 @@ Tako $\emptyset$ kot $A$ pripadata $\mathcal{P}A$
 
 ==Kartezični produkt==: $A\times B = \{(a,b);a\in A \land b\in B\}$ je množica vseh urejenih parov (urejenih n-teric) množic $A$ in $B$ z  $m*n$ elementi
 $A^n := A\times A\times \ ... \ \times A$
-### Enakosti množic
+## Enakosti množic
 (podobno kot [[Izjave#Zakoni izjavnega računa|zakoni izjavnega računa]])
 1. Zakon dvojnega komplementa: 
 $$
@@ -99,7 +98,7 @@ Reševanje sistemov enačb z 1 neznanko:
 - $A+B = \emptyset \iff A=B$
 - $A\cup B \subseteq C \iff A\subseteq C \land B\subseteq C$
 - $A\subseteq B\cap C \iff A\subseteq B \land A\subseteq C$
-# Moč množic
+### Moč množic
 ==Moč množice== oz. število elementov A: $|A|$
 Primeri: $|\emptyset|=0$, $|\{0, 1\}|=2$, $|\{\{0,1\}\}|=1$
 

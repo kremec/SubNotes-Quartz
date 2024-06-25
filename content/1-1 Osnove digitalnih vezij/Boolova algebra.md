@@ -1,6 +1,6 @@
 ==Postulati - aksiomi==: nedokazljive osnovne predpostavke, iz katerih je možno izpeljati vse zakone matematičnega sistema
-
-Postulati Boolovih operatorjev: (podobno kot pri [[Izjave#Izjavni vezniki|izjavnih veznikih]])
+### Postulati Boolovih operatorjev
+(Podobno kot pri [[Izjave#Izjavni vezniki|izjavnih veznikih]]):
 - ==Zaprtost==: za vsak par elemntov iz množice S dobimo ob aplikaciji operatorja element, ki je prav tako iz S
 $$
 \begin{aligned} x,y\in X \ &\rightarrow \ x\lor y\in X \\ x,y\in X \ &\rightarrow \ xy\in X \end{aligned}
@@ -22,8 +22,8 @@ $$
 \begin{aligned} \forall x\in X, \exists \overline x \ &\rightarrow \ x\lor \overline x=1 \\ \forall x\in X, \exists \overline x \ &\rightarrow \ x\overline x=0 \end{aligned}
 $$
 - ==Število elementov==: obstajata vsaj 2 elementa $x,y\in X$, da velja $x\ne y$
-
-Pravila (podobno kot pri [[Izjave#Zakoni izjavnega računa|zakoni izjavnega računa]]):
+### Pravila Boolove algebre
+(Podobno kot pri [[Izjave#Zakoni izjavnega računa|zakoni izjavnega računa]]):
 - ==Idempotenca==:
 $$
 \begin{aligned} x\lor x\lor \ ... \ \lor x &= x \\ xx\ ...\ x&=x \end{aligned}
@@ -36,7 +36,7 @@ $$
 $$
 \begin{aligned} (x\lor y)\lor z&=x\lor (y\lor z) \\ (xy)z&=x(yz) \end{aligned}
 $$
-- ==Demorganov izrek==:
+- ==DeMorganov izrek==:
 $$
 \begin{aligned} \overline{x\lor y\lor \ ... \ \lor z}&=\overline x \overline y \ ... \ \overline z \\ \overline{xy \ ... \ z}&=\overline x \lor \overline y \lor \ ... \lor \overline z \end{aligned}
 $$

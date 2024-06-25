@@ -1,4 +1,4 @@
-### Deljivost celih števil
+## Deljivost celih števil
 ==Izrek o deljenju==: Naj bosta $m,n\in \mathbb{Z}$ in $m\gt 0$. Obstajata enolično določeni celi števili $k$ in $r$, pri čemer je:
 $$
 n=k*m+r \ \text{ in velja } \ 0\leq r\lt m
@@ -43,7 +43,7 @@ int gcd(int m, int n, int & s, int & t) {
     return d;
 }
 ```
-### Diofantske enačbe
+## Diofantske enačbe
 ==Diofantska enačba==: ima celoštevilske podatke in iščemo celoštevilske rešitve
 
 ==Linearna diofantska enačba== z dvema neznankama: enačba oblike $a*x+b*y=c$
@@ -61,7 +61,7 @@ $$
 46*21+(−92)*9=138
 $$
 s čimer dobimo $x_0=46$ in $y_0=-92$, kar je rešitev osnovne enačbe, s formulama za $x_t,y_t$ pa dobimo še ostale možne rešitve.
-### Praštevila
+## Praštevila
 ==Praštevilo==: naravno število $n \gt 1$ z natanko dvema pozitivnima deliteljema
 ==Praštevilska dvojčka==: par oblike $(p, p+2)$
 
@@ -78,7 +78,7 @@ Naj bo $n\in \mathbb{N}$ in $n=p_1^{k_1}*...*p_m^{k_m}$ njegov praštevilski raz
 $$
 \varphi(n)=(p_1^{k_1}-p_1^{k_1-1})*...*(p_m^{k_m}-p_m^{k_m-1}) = n*(1-\frac 1 {p_1})*...*(1-\frac 1 {p_m})
 $$
-### Konguence
+## Konguence
 ==a mod b==: ostanek $a$-ja pri deljenju z $m$
 ==Kongruenca po modulu m==: [[Relacije|relacija]] $a\equiv b\pmod{m} \ \sim \ m|(a-b) \ \sim \ a \bmod m=b \bmod m$
 1. Kongruenca po modulu je ekvivalenčna relacija v $\mathbb Z$

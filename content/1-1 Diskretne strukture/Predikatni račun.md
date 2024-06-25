@@ -6,7 +6,7 @@ Namesto konstant lahko v predikate vstavljamo tudi **spremenljivke**, pri čemer
 Iz formule lahko naredimo izjavo na več načinov:
 - spremenljivke zamenjamo s konstantami
 - formulo zapremo s kvantifikatorji
-
+### Kvantifikatorji
 ==Kvantifikatorja==:
 - $\forall$ - **univerzalni kvantifikator** ("za vsak")
 - $\exists$ - **eksistenčni kvantifikator** ("obstaja")

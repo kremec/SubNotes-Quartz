@@ -2,14 +2,12 @@
 - $i=\sqrt{-1}$
 - $a$ - ==realni del imaginarnega števila== $Re(z)$
 - $b$ - ==imaginarni del imaginarnega števila== $Im(z)$
-
-Operacije:
-==Konjugiranje==: $x=a+bi \ \rightarrow \ \bar x=a-bi$
-Seštevanje: $(a+bi)+(c+di)=(a+c)+(b+d)i$
-Množenje: $(a+bi)*(c+di)=(ac-bd)+(ad+bc)i$
-Deljenje: (pomnožimo števec in imenovalec s konjugirano vrednostjo imenovalca)
-
-Lastnosti:
+### Operacije
+- ==Konjugiranje==: $x=a+bi \ \rightarrow \ \bar x=a-bi$
+- Seštevanje: $(a+bi)+(c+di)=(a+c)+(b+d)i$
+- Množenje: $(a+bi)*(c+di)=(ac-bd)+(ad+bc)i$
+- Deljenje: (pomnožimo števec in imenovalec s konjugirano vrednostjo imenovalca)
+### Lastnosti:
 - $|z|=|\bar z|$
 - $\bar{\bar z}=z$
 - $|z_1*z_2|=|z_1|*|z_2|$
@@ -17,8 +15,7 @@ Lastnosti:
 - $|z_1+z_2|\leq |z_1|+|z_2|$
 - $\bar{z_1+z_2}=\bar z_1 + \bar z_2$
 - $|z_2-z_1|$ ... razdalja med $z_1$ in $z_2$
-
-Načini zapisa:
+### Načini zapisa
 ==Kartezični zapis==: $z=x+yi \ ; \ x,y\in \mathbb R$
 ==Polarni zapis==:
 $$

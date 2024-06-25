@@ -36,7 +36,7 @@ $$
 ==Enakovredna== izjavna izraza:
 - pri vseh naborih logičnih vrednosti izjavnih spremenljivk imata enako vrednost
 - izraz $A \iff B$ je tavtologija
-# Zakoni izjavnega računa
+## Zakoni izjavnega računa
 1. Zakon dvojne negacije: 
 $$
 \begin{aligned} \neg\neg A &\sim A \end{aligned}
@@ -100,12 +100,12 @@ $$
 Dualne zakone dobimo z zamenjavo konjunkcije in disjunkcije ter 0 in 1 v (večini) zakonov
 
 Izraz $A_1 \veebar A_2 \veebar \ ... \ \veebar A_n$  je (ne glede na postavitev oklepajev) resničen, ko je liho mnogo členov resničnih.
-
+### Osnovne normalne oblike
 ==Osnovna konjunkcija/disjunkcija==: konjunkcija/disjunkcija izjavnih spremenljivk in/ali njihovih negacij
 ==Disjunktivna Normalna Oblika (DNO)==: disjunkcija osnovnih konjunkcij
 ==Konjunktivna Normalna Oblika (KNO)==: konjunkcija osnovnih disjunkcij
 Vsak izjavni izraz ima DNO in KNO
-
+### Polnost nabora izjavnih veznikov
 ==Poln nabor izjavnih veznikov==: družina izjavnih veznikov N, če za vsak izjavni izraz A obstaja enakovreden izjavni izraz B, ki vsebuje samo veznike iz N.
 Primeri: {$\neg,\land,\lor$}, {$\neg,\land$}, {$\neg,\lor$}, {$\neg,\implies$}, {$0,\implies$}, {$\uparrow$}, {$\downarrow$}
 Dokaz polnosti nabora izjavnih veznikov: vsak veznik iz že znanega polnega nabora izrazimo samo z uporabo veznikov testiranega nabora

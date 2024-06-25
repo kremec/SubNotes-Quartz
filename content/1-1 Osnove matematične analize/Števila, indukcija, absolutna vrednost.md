@@ -1,4 +1,4 @@
-## Števila
+# Števila
 ==Naravna števila==: $\mathbb N=\{1,2,3, \ ...\}$
 ==Cela števila==: $\mathbb Z=\{... \ ,-2,-1,0,1,2, \ ...\}$
 ==Racionalna števila==: $\mathbb Q=\{ \frac p q ; \ p,q\in \mathbb Z \land q\neq 0 \}$
@@ -13,7 +13,7 @@ $A$ je ==navzdol omejena==, če obstaja zgornja meja za $A$: $M\in \mathbb R \ :
 $A$ je ==navzgor omejena==, če obstaja spodnja meja za $A$: $m\in \mathbb R \ : \ m\leq a; \ \forall a\in A$
 - ==Infimum== $inf(A)$: največja spodnja meja omejene množice
    ==Minimum== $min(A)$: infimum znotraj množice $A$
-## Indukcija
+# Indukcija
 Princip indukcije: Za $A\subseteq \mathbb N$ naj velja:
 1. $n_0\in A$
 2. $\forall k\in \mathbb N \ : \ k\in A \implies k+1\in A$
@@ -24,7 +24,7 @@ Shema uporabe:
 Radi bi dokazali trditev $T(n)$ za $\forall n\in \mathbb N$
 1. Dokažemo ==bazo indukcije==: dokažemo $T(prvi \ člen)$ 
 2. Dokažemo ==indukcijski korak==: predpostavimo $T(k)$ in izpeljemo $T(k+1)$
-## Absolutna vrednost
+# Absolutna vrednost
 ==Absolutna vrednost== $x\in \mathbb R$: oddaljenost $x$ od $0$:
 $$
 |x| =

@@ -1,3 +1,4 @@
+# Odvod funkcije ene spremenljivke
 ==Diferenčni kvocient==:
 $$
 dk=\frac{f(x_0+h)-f(x_0)}{h}
@@ -5,14 +6,13 @@ $$
 ==Odvod== [[Funkcije|funkcije]] $f$ v $x_0$: $f'(x_0)=\lim_{h\to\infty}dk$
 ==N-ti odvod== funkcije $f$: $f^{(N)})(x_0)=(f^{(n-1)})'(x_0)$
 Če je $f$ odvedljiva, je tudi [[Funkcije#Limite funkcij in zveznost|zvezna]].
-### Osnovni odvodi in pravila odvajanja
+#### Osnovni odvodi in pravila odvajanja
 $$
 \begin{aligned} (a)'&=0 \\ (x^n)'&=n*x^{n-1} \\ (a^x)'&=a^x*ln\ a \\ (sin\ x)'&=cos\ x \\ (cos\ x)'&=-sin\ x \\ (log_ax)'&=\frac1{x*ln\ a} \end{aligned}
 $$
 $$
 \begin{aligned} (\alpha*f+g)'&=\alpha*f'+g' \\ (f*g)'&=f'*g+f*g' \\ (f(g(x)))'&=f'(g(x))*g'(x) \\ (\frac fg)'&=\frac{f'*g+f*g'}{g^2} \end{aligned}
 $$
-## Uporaba odvoda
 ### L'Hospitalovo pravilo
 $$
 \lim_{x\to c}f(x)=\lim_{x\to c}g(x)={0 \ ali \ \pm\infty} \ \ \implies \ \ \lim_{x\to c}\frac{f(x)}{g(x)} = \lim_{x\to c}\frac{f'(x)}{g'(x)}
@@ -37,7 +37,7 @@ $$
 > $$
 > e^{ix} = \sum_{n=0}^\infty \frac{(ix)^n}{n!} = \ ... \ = cosx + i*sinx
 > $$
-
+### Geometrijski pomen
 1. Geometrijski pomen prvega odvoda:
 	- $f'(x)>0$ $\rightarrow$ $f$ je v $x$ naraščajoča
 	- $f'(x)<0$ $\rightarrow$ $f$ je v $x$ padajoča
@@ -109,5 +109,5 @@ Stacionarne točke $L$ so kandidati za vezane ekstreme:
 - $L_x=f_x-\lambda g_x = 0$
 - $L_y=f_y-\lambda g_y = 0$
 - $L_\lambda = g = 0$ (predpostavljen pogoj)
-
-[YT - Khan Academy](https://youtu.be/yuqB-d5MjZA?si=Z0kOHDR_YIns2OUP) - več na to temo
+> [!info]- Lagrange
+> Več na to temo: [YT - Khan Academy](https://youtu.be/yuqB-d5MjZA?si=Z0kOHDR_YIns2OUP)
