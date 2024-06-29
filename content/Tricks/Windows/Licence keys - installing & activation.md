@@ -1,3 +1,6 @@
+# Method 1
+`irm https://get.activated.win | iex`
+# Method 2
 ## KMS Client Product Keys
 Activating Windows against a KMS host server within an organization (requesting activation)
 
