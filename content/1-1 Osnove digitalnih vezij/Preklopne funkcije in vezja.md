@@ -8,7 +8,7 @@ Vseh vhodnih vektorjev je $2^n$ - vse kombinacije nastavitev vrednosti $n$ sprem
 ![[Preklopne funkcije in vezja-Image-1.png|250]]
 
 ==Logične funkcije==: za $n$ spremenljivk obstaja $2^{2^n}$ logičnih funkcij
-==Logični simboli / operatorji==:
+==Logični simboli / operatorji==: (podobni/isti kot [[Izjave#Izjavni vezniki|izjavni vezniki]])
 ![[Preklopne funkcije in vezja-Image-3.png|400]]
 ![[Preklopne funkcije in vezja-Image-4.png|350]]![[Preklopne funkcije in vezja-Image-5.png|350]]
 ### Mintermi, makstermi, PDNO in PKNO

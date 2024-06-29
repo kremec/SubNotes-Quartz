@@ -8,3 +8,4 @@ Year 1 - Semester 1
 - [[Minimizacija preklopnih funkcij]]
 - [[Strukturalna preklopna vezja]]
 - [[Sekvenčna vezja]]
+- [[Končni avtomati]]

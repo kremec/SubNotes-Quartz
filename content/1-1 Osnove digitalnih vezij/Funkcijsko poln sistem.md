@@ -1,4 +1,4 @@
-==Funkcijsko poln sistem==: množica funkcij (operatorjev), s katerimi lahko realiziramo katerokoli preklopno funkcijo
+[[Izjave#Polnost nabora izjavnih veznikov|Funkcijsko poln sistem]]: množica funkcij (operatorjev), s katerimi lahko realiziramo katerokoli preklopno funkcijo
 Osnovni funkcijsko polni sistem: $(\land \ , \lor \ , \ \overline{ })$
 Izpeljani funkcijsko polni sistemi: $(\lor \ , \ \overline{ }), \ (\land \ , \ \overline{ }), \ (\downarrow), \ (\uparrow), \ (\implies , 0) \ (\iff, \lor \ ,0)$ 
 
