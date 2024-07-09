@@ -11,7 +11,10 @@ const config: QuartzConfig = {
     pageTitle: "SubNotes",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: 'google',
+      tagId: 'G-2L38EJ6QDZ'
+    },
     locale: "en-US",
     baseUrl: "kremec.github.io/SubNotes-Quartz/",
     ignorePatterns: [".obsidian", "Templates/*", "Tricks/*", "Tricks", "Videos, books & articles/*"],
