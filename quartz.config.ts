@@ -12,8 +12,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: 'google',
-      tagId: 'G-2L38EJ6QDZ'
+      provider: 'posthog',
+      apiKey: 'phc_9lZclk4bYQhVjHSIgSwQfc18fGYMvCUWoOOlCJbbRhr',
+      host: 'https://app.posthog.com'
     },
     locale: "en-US",
     baseUrl: "kremec.github.io/SubNotes-Quartz/",
