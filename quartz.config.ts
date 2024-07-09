@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: 'posthog',
       apiKey: 'phc_9lZclk4bYQhVjHSIgSwQfc18fGYMvCUWoOOlCJbbRhr',
-      host: 'https://app.posthog.com'
+      host: 'https://us.i.posthog.com'
     },
     locale: "en-US",
     baseUrl: "kremec.github.io/SubNotes-Quartz/",
