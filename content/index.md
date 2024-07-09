@@ -6,6 +6,7 @@ title: FRI UNI
 [[Diskretne strukture (DS)]]
 [[Osnove matematične analize (OMA)]]
 [[Osnove digitalnih vezij (ODV)]]
+[[Fizika (FIZ)]]
 #### 1 - 2
 
 #### 2 - 1

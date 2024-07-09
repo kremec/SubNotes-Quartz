@@ -9,3 +9,6 @@ Year 1 - Semester 1
 - [[Strukturalna preklopna vezja]]
 - [[Sekvenčna vezja]]
 - [[Končni avtomati]]
+- [[Regularni izrazi]]
+- [[Programabilna vezja]]
+- [[Aritmetično-logična vezja in vodila]]
