@@ -1,1 +1,0 @@
-`--disable-direct-composition-overlays --disable-hang-monitor --disk-cache-dir="t:\GoogleCache\%USERNAME%" --disk-cache-size=524288000 --window-position=343,46 --window-size=1550,980`
