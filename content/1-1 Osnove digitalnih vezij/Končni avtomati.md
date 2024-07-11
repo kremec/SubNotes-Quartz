@@ -63,4 +63,29 @@ $n$-bločna particija : $\pi =\{B_1, \ ..., \ B_n\}$
 Operacije:
 - $\pi_i\cdot\pi_j=\{B_{i_1}\cap B_{j_1}, \ B_{i_1}\cap B_{j_2}, \ ..., \ B_{i_2}\cap B_{j_1}, \ ..., \ B_{i_n}\cap B_{j_m}\}$
 - $\pi_i+\pi_j$  ...  če je v nekem bloku element, združiš vse bloke s tem elementom v en blok
+
+> [!example]- Primeri particij in operacij nad njimi
+> $\pi_i=\{\overline{1},\overline{2,3,4},\overline{5,6,7},\overline{8}\}$
+> $\pi_j=\{\overline{1,2},\overline{3,4},\overline{5,7},\overline{6},\overline{8}\}$
+> $\pi_i\cdot\pi_j=\{\overline{1},\overline{2},\overline{3,4},\overline{5,7},\overline{6},\overline{8}\}$
+> $\pi_i+\pi_j=\{\overline{1,2,3,4},\overline{5,6,7},\overline{8}\}$
+
+### Dekompozicija avtomata
+Avtomat predstavimo z dvema "notranjima avtomatoma", vsak od katerih ima množico notranjih stanj predstavljeno s particijo notranjih stanj osnovnega avtomata
+Substitucijska značilnost: Iz istega bloka ob isti vhodni črki zmeraj ostanemo v istem bloku
+Za particiji notranjih stanj $\pi_i$ in $\pi_j$ velja: $\pi_i\cdot\pi_j=\pi_0$
+#### Serijska dekompozicija avtomata
+![[Končni avtomati-Image-6.png|400]]
+
+> [!example]- Primer serijske dekompozicije Moorovega avtomata
+> ![[Končni avtomati-Image-7.png|400]]
+#### Paralelna dekompozicija avtomata
+![[Končni avtomati-Image-8.png|400]]
 ### Minimizacija
+Avtomat predstavimo z novim avtomatom z manj stanji, ki pa je vseeno ekvivalenten osnovnemu avtomatu
+1. Stanja avtomata razdelimo na particije glede na izhodno črko
+2. Delitveni proces razdeli particijo na več blokov
+3. Ponavljamo zgornja koraka, dokler prehod iz več stanj pri isti vhodni črki ne vodi v enake znake
+
+> [!example]- Primer minimizacije avtomata
+> ![[Končni avtomati-Image-9.png|400]]
