@@ -45,7 +45,7 @@ F_l^{max}=k_l\cdot F_N
 $$
 Koeficient lepenja $k_l$ je odvisen od snovi
 
-Sila trenja deluje, ko se telo giblje, v nasprotni smeri gibanja, vzporedno s podlago
+Sila trenja deluje, ko se telo giblje, v nasprotni smeri gibanja, vzporedno s podlago ^e87ba5
 $$
 F_{tr}=k_{tr}\cdot F_N
 $$

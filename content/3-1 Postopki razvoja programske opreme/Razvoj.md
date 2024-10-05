@@ -1,0 +1,1 @@
+Pomemben del DevOps je ==Continuous Integration/Continuous Delivery==: avtomatizacija buildov in inštalacij

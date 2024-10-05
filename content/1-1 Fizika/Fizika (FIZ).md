@@ -7,3 +7,4 @@ Year 1 - Semester 1
 - [[Energija, delo in moč]]
 - [[Gibalna količina in trki]]
 - [[Navor in vrtilna količina]]
+- [[Nihanje in valovanje]]
