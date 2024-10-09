@@ -1,0 +1,61 @@
+==Moorov zakon==: št. tranzistorjev se vsaki 2 leti podvoji
+Dennardovo pravilo: zmanjšanje velikosti tranzistorja omogoči več tranzistorjev
+### Enojedrna zasnova / von Neumann
+![[Arhitekture računalniških sistemov-Image-1.png|300]]
+Zaporedno izvajanje: prevzem ukaza - dekodiranje - prevzem operandov - izvajanje - shranjevanje
+#### Pomnilniška hierarhija
+1. Registri
+2. ==Predpomnilnik==:
+    - večnivojski (L1 = ukazi + podatki, L2 in L3 = podatki)
+    - organiziran v bloke (enota prenosov)
+    - direktni / asociativni / set-asociativni
+    - pisanje skozi / pisanje nazaj
+3. Glavni pomnilnik: 100x počasnejši dostop kot registri
+4. Navidezni pomnilnik: razširitev na disku, organiziran v strani
+#### Vzporedenje v strojni opremi
+- Cevovod - stopnje z enako kompleksnostjo
+- Vektorski ukazi - hkratno izvajanje ukaza na več operandih
+- Špekulativno izvajanje - med preverjanjem pogoja izvajamo ukaze, ki mu najverjetneje sledijo
+- Superskalarnost - vzporedno izvajanje neodvisnih ukazov
+- Strojne niti - hkratno izvajanje različnih programskih tokov
+#### Omejitve
+- ==pregrevanje čipa== - 130W na jedro
+- prepustnost pomnilnika - procesor čaka na podatke
+- ostale optimizacije strojnega vzporejanja že implementiranje
+### Večjedrne arhitekture
+Omogočajo:
+- ohranjanje Moorovega zakona
+- ==energetsko učinkovitost== - opravimo več z manj moči
+Marsikdaj avtomatiski paralelizem (optimizacije procesorja) ni učinkovit $\rightarrow$ programi morajo biti zasnovani z vzporednostjo v mislih
+### Sistemi s skupnim pomnilnikom
+Procesorji si delijo skupni pomnilnik (enovit naslovni prostor) in L2 ter L3 predpomnilnika
+$\rightarrow$ ==spremembe v pomnilniku vidijo vsi procesorji==
+#### Unified Memory Architecture (UMA)
+![[Arhitekture računalniških sistemov-Image-2.png|250]]
+Enak dostopni čas do pomnilnika za vsa jedra
+Zagotavljanje skladnosti: pisanje skozi + preverjanje in popravljanje ostalih predpomnilnikov
+#### Non-Unified Memory Architecture
+![[Arhitekture računalniških sistemov-Image-3.png|400]]
+Dostopni čas do neposredno povezanih pomnilniških modulov krajši, do ostalih 2-3x daljši
+Zagotavljanje skladnosti: direktorij za vodenje stanja predpomnilniških blokov; pisanje nazaj in razveljavljanje predpomnilnikov na drugih procesorjih
+Procesorji morajo čim več delati s pomnilnikom svoje domene
+### Sistemi s porazdeljenim pomnilnikom
+![[Arhitekture računalniških sistemov-Image-4.png|200]]
+Vsak procesor lahko neposredno dostopa le do enovitega pomnilnika na svojem vozlišču
+Vrste:
+- gruče: na vsakem vozlišču svoj OS
+- masivno vzporedni procesorji: en OS za vsa vozlišča
+- ozvezdja: št. procesorskih jeder enega vozlišča > št. vozlišč
+### (Grafični) pospeševalniki
+![[Arhitekture računalniških sistemov-Image-5.png|450]]
+Niso popolnoma samostojni, a imajo svoje pomnilniške in procesne elemente
+Razbremenitev glavnega procesorja:
+1. Procesor prenese podatke iz pomnilnika v pospeševalnik
+2. Procesor sproži izvajanje obdelave
+3. Pospeševalnik izvede obdelavo in rezultate shrani
+4. Procesor prenese podatke nazaj v pomnilnik
+Ozko grlo: prenos podatkov med gostiteljem in pospeševalnikom
+### Moderna superračunalniška grušča
+![[Arhitekture računalniških sistemov-Image-6.png|550]]
+Glavno vozlišče: koordinira gruščo
+podatke iz osebnega računalnika preko prijavnega vozlišča kopiramo na podatkovna vozlišča, računska vozlišča te podatke vidijo
