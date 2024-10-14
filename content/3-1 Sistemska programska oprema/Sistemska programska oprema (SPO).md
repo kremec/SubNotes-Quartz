@@ -2,5 +2,5 @@
 Year 3 - Semester 1
 - - -
 ## Lectures
-- [[Programska oprema]]
+- [[3-1 Sistemska programska oprema/Programska oprema]]
 - [[Hipotetični Simplified Instructional Computer]]

@@ -12,6 +12,9 @@ Zaporedno izvajanje: prevzem ukaza - dekodiranje - prevzem operandov - izvajanje
     - pisanje skozi / pisanje nazaj
 3. Glavni pomnilnik: 100x počasnejši dostop kot registri
 4. Navidezni pomnilnik: razširitev na disku, organiziran v strani
+
+Kopica: dinamično dodeljevanje pomnilnika
+Sklad: LIFO, shranjujemo kontekst ob klicih funkcij - povratni naslov, lokalne spremenljivke, ...
 #### Vzporedenje v strojni opremi
 - Cevovod - stopnje z enako kompleksnostjo
 - Vektorski ukazi - hkratno izvajanje ukaza na več operandih
@@ -55,7 +58,3 @@ Razbremenitev glavnega procesorja:
 3. Pospeševalnik izvede obdelavo in rezultate shrani
 4. Procesor prenese podatke nazaj v pomnilnik
 Ozko grlo: prenos podatkov med gostiteljem in pospeševalnikom
-### Moderna superračunalniška grušča
-![[Arhitekture računalniških sistemov-Image-6.png|550]]
-Glavno vozlišče: koordinira gruščo
-podatke iz osebnega računalnika preko prijavnega vozlišča kopiramo na podatkovna vozlišča, računska vozlišča te podatke vidijo

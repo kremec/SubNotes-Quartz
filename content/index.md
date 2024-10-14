@@ -14,3 +14,8 @@ title: FRI UNI
 #### 2 - 2
 [[Operacijski sistemi (OS)]]
 [[Teorija informacij in sistemov (TIS)]]
+#### 3 - 1
+[[Osnove umetne inteligence (OUI)]]
+[[Sistemska programska oprema (SPO)]]
+[[Porazdeljeni sistemi (PS)]]
+[[Postopki razvoja programske opreme (PRPO)]]
