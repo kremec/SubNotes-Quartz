@@ -5,3 +5,4 @@ Year 3 - Semester 1
 - [[Arhitekture računalniških sistemov]]
 - [[Moderna superračunalniška gruča]]
 - [[Programska oprema]]
+- [[Go]]
