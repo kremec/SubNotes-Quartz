@@ -6,3 +6,4 @@ Year 3 - Semester 1
 - [[Moderna superračunalniška gruča]]
 - [[Programska oprema]]
 - [[Go]]
+- [[Sinhronizacija]]

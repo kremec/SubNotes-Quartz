@@ -5,4 +5,5 @@ Year 3 - Semester 1
 - [[Osnove arhitekture aplikacij]]
 - [[Mikrostoritve]]
 - [[API komunikacija]]
-- [[Razvoj]]
+- [[Maven]]
+- [[CDI]]

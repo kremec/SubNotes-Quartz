@@ -164,3 +164,48 @@ Učenje:
 - nadomestimo manjkajočo vrednost - povprečje, modus, naključna, napovedana
 Napovedovanje:
 - verjetnostna klasifikacija glede na vse možne vrednosti atributa
+## Naivni Bayesov klasifikator
+**Bayesovo pravilo** izraža diagnostično pogojno verjetnost na podlagi vzorčne pogojne verjetnosti
+$$
+P(hipoteza/opažanje)=\frac{P(opažanje/hipoteza)*P(hipoteza)}{P(opažanje)}
+$$
+Verjetnost razreda C (hipoteze) pri podanih vrednostih atributov:
+$$
+P(C/X_1X_2...X_n)=\frac{P(C)*P(X_1/X_2...X_n)}{P(X_1X_2...X_n)}
+$$
+Poznavanje velikega števila pogojnih verjetnosti verižnega pravila je v praksi težavno:
+$$
+P(X_1X_2...X_n)=P(X_1/X_2...X_n)*P(X_2/X_3...X_n)*...*P(X_{n-1}/X_n)*P(X_n)
+$$
+Zato predpostavimo medsebojno neodvisnost - dobri približki:
+$$
+P(C/X_1X_2...X_n)\sim\frac{P(C)*\prod_iP(X_i/C))}{\prod_iP(X_i)}
+$$
+==Bayesov klasifikator==: primer klasificiramo v najbolj verjeten razred
+$$
+h(C/X_1X_2...X_n)=P(C)*\prod_{i=1}^nP(X_i/C)
+$$
+- učenje: ocenimo verjetnosti $P(C_k)$ in $P(X_i/C_k)$ za vse razrede $C_k$ in vrednosti atributov $X_i$
+- napovedovnje: uporaba zgornje enačbe za napoved razreda novim primerom
+Poenostavitev formule $\rightarrow$ $\sum P(C)\ne1$ $\rightarrow$ ==normalizacija rezultatov==
+### Nomogrami
+==Nomogram==: grafična upodobitev numeričnih odnosov med spremenljivkami $\rightarrow$ pristop k vizualizaciji naivnega Bayesovega modela
+- pomembnost posameznih ==vrednosti== vsakega atributa na ciljni razred
+- pomembnost posameznih ==atributov== na ciljni razred
+Vsaka vrednost atributa doprinaša določeno št. točk k ==skupni vsoti točk==, ==razpon točk atributa== predstavlja pomembnost atributa na napoved ciljnega razreda
+#### Izračun nomograma
+==Logistična funkcija==: verjetnost na intervalu $[0,1]$ preslika na interval $(-\infty,\infty)$
+$$
+logit\ P=log\frac{P}{1-P}
+$$
+$$
+logit\ h(C/X_1X_2...X_n)=\ ...\ =logit\ P(C)+\sum_i log\frac{P(X_i/C)}{P(X_i/\overline C)} = logit\ P(C)+\sum_i log\ OR(X_i)
+$$
+Edino ==razmerje verjetja== (Odds Ratio) je odvisno od vrednosti atributov $X_i$ $\rightarrow$ uporabimo za točkovanje doprinosa atributa
+$$
+točke(C/X_i)=log\ OR(X_i)=log\frac{P(X_i/C)}{P(X_i/\overline C)}
+$$
+$$
+točke(C/X_1X_2...X_n)=\ ...\ =\sum_ilog\frac{\frac{P(X_i/C)}{P(X_i/\overline C)}}{\frac{P(C)}{P(\overline C)}}
+$$
+## Metoda k najbližjih sosedov
