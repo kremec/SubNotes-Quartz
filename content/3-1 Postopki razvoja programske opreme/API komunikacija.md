@@ -21,28 +21,6 @@ API klici počasnejši od interne logike $\rightarrow$ čim manj komunikacije pr
 Ostale operacije:
 - obravnavamo kot podvir (npr. `/razmerja/312/skleni`, `.../prekini`, ...)
 - ustvarimo nov navidezen vir (npr. POST `/iskanje`)
-#### HTTP kode
-Kode uspešnih procesiranj:
-- 200 OK – Odgovor na uspešno akcijo
-- 201 Created – Odgovor na uspešno akcijo, ki rezultira v kreiranje vira.
-- 204 No Content – Odgovor na uspešno akcijo brez vsebine odgovora
-- 304 Not Modified – Informacija odjemalcu, da drži aktualno
-medpomnjeno instanco
-
-Kode napak:
-- 400 Bad Request – Zahteva je neustrezno oblikovana, vsebine ni
-mogoče razčleniti, podatki manjkajo
-- 401 Unauthorized – Avtentikacija uporabnika ni uspešna
-- 403 Forbidden – Avtorizacija uporabnika do vira ni uspešna
-- 404 Not Found – Zahteva po viru, ki ne obstaja
-- 405 Method Not Allowed – Zahteva po HTTP metodi, ki uporabniku ni
-dovoljena
-- 410 Gone – Vir na URL ne obstaja več (uporabno za verzioniranje)
-- 415 Unsupported Media Type – Tip vsebine zahteve ni veljaven
-- 422 Unprocessable Entity – Validacijska napaka
-- 429 Too Many Requests – Zahteva zavrnjena zaradi preobremenitve
-strežnika ali preveč zahtev (uporaba X-Rate-Limit-... značk)
-- 500 Internal Server Error – Generalna napaka na strežniku
 #### MIME formati
 Specifikacija formata sporočil:
 - application/json
@@ -52,21 +30,34 @@ Specifikacija formata sporočil:
 - ...
 
 V HTTP zaglavje dodamo header `Content-Type: ...` oz. `Accept: ...`
+<br><br><br><br><br>
+#### HTTP kode
+Kode uspešnih procesiranj:
+- 200 OK – Odgovor na uspešno akcijo
+- 201 Created – Odgovor na uspešno akcijo, ki rezultira v kreiranje vira.
+- 204 No Content – Odgovor na uspešno akcijo brez vsebine odgovora
+- 304 Not Modified – Informacija odjemalcu, da drži aktualno medpomnjeno instanco
+
+Kode napak:
+- 400 Bad Request – Zahteva je neustrezno oblikovana, vsebine ni mogoče razčleniti, podatki manjkajo
+- 401 Unauthorized – Avtentikacija uporabnika ni uspešna
+- 403 Forbidden – Avtorizacija uporabnika do vira ni uspešna
+- 404 Not Found – Zahteva po viru, ki ne obstaja
+- 405 Method Not Allowed – HTTP metoda uporabniku ni dovoljena
+- 410 Gone – Vir na URL ne obstaja več (uporabno za verzioniranje)
+- 415 Unsupported Media Type – Tip vsebine zahteve ni veljaven
+- 422 Unprocessable Entity – Validacijska napaka
+- 429 Too Many Requests – Zahteva zavrnjena zaradi preobremenitve strežnika ali preveč zahtev (uporaba X-Rate-Limit-... značk)
+- 500 Internal Server Error – Generalna napaka na strežniku
 ### URL
-Zmeraj se začne z verzijo APIja (`https//.../v1/...`)
-URL gnezdimo do max 3-4 nivoje
+URL gnezdimo do max 3-4 nivoje, zmeraj se začne z verzijo APIja (`https//.../v1/...`)
 #### Ostranjevanje (seznamov)
-Omejujemo z URL parametri: `?offset=...&limit=...`
-V response HTTP zaglavje dodamo header `X-Total-Count`
+Omejujemo z URL parametri: `?offset=...&limit=...`; v response HTTP zaglavje dodamo `X-Total-Count`
 #### Sortiranje, filtriranje in iskanje
-Omejujemo z URL parametri:
-- sortiranje: `?order=...`
-- filtriranje: `?where=...`
-- iskanje: `?q=...`
-Omogoča generično poizvedovanje po več poljih hkrati
+Omogoča generično poizvedovanje po več poljih hkrati. URL parametri: sortiranje z `?order=...`, filtriranje z `?where=...`, iskanje z `?q=...`
 #### Delne predstavitve virov
-Omejujemo z URL parametri: `?fields=...`
-Omogoča pošiljanje le relevantnih polj v responsu
+Omogoča pošiljanje le relevantnih polj v responsu. URL parametri: `?fields=...`
+
 #### Povezovanje virov
 V JSON odgovor lahko namesto dejanskih podatkov podamo link do njih
 Prvi klic krajši, potreben še nov klic če te podatke rabimo $\rightarrow$ lazy loading

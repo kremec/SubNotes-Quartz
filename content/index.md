@@ -19,3 +19,5 @@ title: FRI UNI
 [[Sistemska programska oprema (SPO)]]
 [[Porazdeljeni sistemi (PS)]]
 [[Postopki razvoja programske opreme (PRPO)]]
+#### 3 - 2
+[[Prevajalniki (P)]]

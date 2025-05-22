@@ -15,7 +15,7 @@
   Nasprotje: kompleksen tesno sklopljen sistem z veliko odvisnostmi
 - ==Odgovornost za le 1 komponento== brez znanja o podrobnostih drugih komponent
 ### Sestava
-![[Osnove arhitekture aplikacij-Image-1.png|400]]
+![[Osnove arhitekture aplikacij-Image-1.png|300]]
 #### Uporabniški vmesniki
 Tekstovni / grafični / zvočni
 Načini delovanja:
@@ -25,6 +25,7 @@ Načini delovanja:
 | **Odjemalski model**                                                                                                                                     | **Strežniški model**                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | - procesiranje v brskalniku odjemalca<br>- komunikacija s strežnikom preko REST<br>- strežnik ne vzdržuje uporabniške seje<br>- obremenitev na odjemalcu | - procesiranje na strežniku<br>- odjemalec samo procesira izgled<br>- strežnik vzdržuje uporabniško sejo<br>- obremenitev na strežniku |
+<br><br><br><br><br><br>
 #### Spletni strežniki
 Zgodovina izvajanja poslovne logike:
 - CGI: shell skripta, kar je dala na stdout se je vrinilo v HTML na določeno mesto

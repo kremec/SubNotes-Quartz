@@ -1,0 +1,11 @@
+==DevOps==: metodologija procesa razvoja - sodelovanje razvojnega in operacijskega dela
+- verzioniranje izvorne kode (Git, SVN)
+- integracija: zmanjševanje tveganj, hitre povratne informacije
+- gradnja (Maven, Jenkins)
+    - prevajanje
+    - izvedba testov (JUnit)
+        - merjenje pokritosti po metodah / vejah izvajanja / vrsticah
+        - testiranje enot - metode $\rightarrow$ integracijsko testiranje - povezovanje enot $\rightarrow$ funkcionalno testiranje - na nivoju API-ja $\rightarrow$ sistemsko testiranje - profiliranje obremenitev $\rightarrow$ testi sprejemljivosti - cilji naročnikov
+- pregled kode: identifikacija problemov in boljših praks
+- namestitev
+- priprava dokumentacije

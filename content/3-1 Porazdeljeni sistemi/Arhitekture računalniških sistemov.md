@@ -29,19 +29,25 @@ Sklad: LIFO, shranjujemo kontekst ob klicih funkcij - povratni naslov, lokalne s
 Omogočajo:
 - ohranjanje Moorovega zakona
 - ==energetsko učinkovitost== - opravimo več z manj moči
+
 Marsikdaj avtomatiski paralelizem (optimizacije procesorja) ni učinkovit $\rightarrow$ programi morajo biti zasnovani z vzporednostjo v mislih
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 ### Sistemi s skupnim pomnilnikom
-Procesorji si delijo skupni pomnilnik (enovit naslovni prostor) in L2 ter L3 predpomnilnika
-$\rightarrow$ ==spremembe v pomnilniku vidijo vsi procesorji==
+Procesorji si delijo skupni pomnilnik (enovit naslovni prostor) in L2 ter L3 predpomnilnika $\rightarrow$ ==spremembe v pomnilniku vidijo vsi procesorji==
+Problem skladnosti: podatki v L1 predpomnilnikih se lahko razlikujejo
 #### Unified Memory Architecture (UMA)
 ![[Arhitekture računalniških sistemov-Image-2.png|250]]
 Enak dostopni čas do pomnilnika za vsa jedra
-Zagotavljanje skladnosti: pisanje skozi + preverjanje in popravljanje ostalih predpomnilnikov
+Zagotavljanje skladnosti:
+- vohljanje: preverjanje in popravljanje ostalih predpomnilnikov + pisanje skozi
+- direktorijski protokoli (npr. MESI)
 #### Non-Unified Memory Architecture
 ![[Arhitekture računalniških sistemov-Image-3.png|400]]
-Dostopni čas do neposredno povezanih pomnilniških modulov krajši, do ostalih 2-3x daljši
-Zagotavljanje skladnosti: direktorij za vodenje stanja predpomnilniških blokov; pisanje nazaj in razveljavljanje predpomnilnikov na drugih procesorjih
-Procesorji morajo čim več delati s pomnilnikom svoje domene
+Dostopni čas procesorja do neposredno povezanih pomnilniških modulov krajši, do ostalih 2-3x daljši $\rightarrow$ čim več dela s pomnilnikom svoje domene
+Zagotavljanje skladnosti: direktoriji za vodenje stanj blokov predpomnilnikov
+- U(ncached) - pomnilniški blok ni uporabljen na nobenem predpomnilniku
+- S(hared) - zapis uporabljen v večih predpomnilnikih, možno le branje
+- E(xclusive) - zapis v enem predpomnilniku, ki ima pravo vrednost
 ### Sistemi s porazdeljenim pomnilnikom
 ![[Arhitekture računalniških sistemov-Image-4.png|200]]
 Vsak procesor lahko neposredno dostopa le do enovitega pomnilnika na svojem vozlišču
@@ -49,12 +55,3 @@ Vrste:
 - gruče: na vsakem vozlišču svoj OS
 - masivno vzporedni procesorji: en OS za vsa vozlišča
 - ozvezdja: št. procesorskih jeder enega vozlišča > št. vozlišč
-### (Grafični) pospeševalniki
-![[Arhitekture računalniških sistemov-Image-5.png|450]]
-Niso popolnoma samostojni, a imajo svoje pomnilniške in procesne elemente
-Razbremenitev glavnega procesorja:
-1. Procesor prenese podatke iz pomnilnika v pospeševalnik
-2. Procesor sproži izvajanje obdelave
-3. Pospeševalnik izvede obdelavo in rezultate shrani
-4. Procesor prenese podatke nazaj v pomnilnik
-Ozko grlo: prenos podatkov med gostiteljem in pospeševalnikom

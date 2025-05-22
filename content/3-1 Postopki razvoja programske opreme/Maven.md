@@ -3,6 +3,7 @@ Pomemben del DevOps razvoja je ==Continuous Integration/Continuous Delivery==: a
 - upravljanje z odvisnostmi
 - izvajanje testov
 - priprava dokumentacije
+
 Najpopularnejši: Apache Maven, Gradle, Make, ...
 ## Maven
 Standardizirana projektna struktura z dobrimi praksami (npr. verzioniranje)
@@ -23,10 +24,13 @@ Project Object Model definira metapodatke:
 ### Življenjski cikli
 Default: koraki gradnje in nameščanja
 - Faze: validate, initialize, ..., compile, ..., test, ..., install, deploy
+
 Clean: čiščenje rezultatov prejšnjih buildov
 - Faze: pre-clean, clean, post-clean
+
 Site: oblikovanje dokumentacije
 - Faze: pre-site, site, post-site, site-deploy
+<br><br><br><br><br><br>
 ### Odvisnosti (dependencies)
 ==Podvajanje odvisnosti==: zasede več prostora, počasen "check-out", težavno sledenje verzijam
 ==Binarni repozitorij==: ena kopija - shranjena izven projekta, odvisnost definirana v pom.xml

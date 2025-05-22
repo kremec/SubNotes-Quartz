@@ -11,7 +11,7 @@
     - ni objekten, a podpira vmesnike
     - večplatformen
 ### Sočasnost
-Model ==Communicating Sequential Processes== oz. model ==opravilo-kanal==:
+Model Communicating Sequential Processes oz. model ==opravilo-kanal==:
 - ==gorutine== (=[[3-1 Porazdeljeni sistemi/Programska oprema#Naloge|naloge]]): enostavne neodvisne sekvenčne funkcije z vhodom in izhodom,ki jih lahko izvajamo sočasno
 - ==kanali==: komunikacija in/ali sinhronizacija gorutin; blokirajoči - gorutine čakajo na sporočilo
 #### Gorutine
@@ -23,8 +23,10 @@ Enosmerni (samo branje ali samo pisanje) / dvosmerni (oboje)
 ==Blokirajoči==:
 - pisanje v poln kanal $\rightarrow$ čakanje na izpraznenje kanala
 - branje iz praznega kanala $\rightarrow$ čakanje na vrednost v kanalu
+
 Velikost kanala:
 - privzeta velikost kanala 0 $\rightarrow$ pisalna gorutina čaka, da je bralna gorutina pripravljena na sprejem
 - kanali z medpomnilnikom (velikost > 0) $\rightarrow$ branje iz kanala po FIFO principu
+
 Zapiranje kanalov: branje iz zaprtega kanala mogoče, `ok` zastavica postavljena na `false`
 Sinhronizacija s kanali: s tipom kanala `struct{}` poudarimo, da se ne bo prenašalo vrednosti

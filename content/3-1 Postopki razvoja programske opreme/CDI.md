@@ -2,6 +2,7 @@
 CDI: avtomatsko zagotavljanje odvisnosti objektom (namesto ročnega ustvarjanja)
 - Kontekst: določa življenjske cikle in interakcije komponent
 - Vstavljanje odvisnosti: vstavljanje referenc na posamezne komponente znotraj aplikacije
+
 CDI zrno: razred, ki ga instancira, uporablja in vstavlja CDI vsebnik
 - anotiramo z dosegom in pridobivanje z anotacijo `@Inject`
 ### Doseg (scope) CDI zrn
@@ -13,6 +14,7 @@ CDI zrno: razred, ki ga instancira, uporablja in vstavlja CDI vsebnik
 Shranjevanje konteksta/stanja klientov (v programskih objektih):
 - v storitvi $\rightarrow$ stateful
 - v bazi $\rightarrow$ stateless
+
 Stateless stortve:
 - lažja horizontalna skalabilnost - load balancerji lahko katerokoli zahtevo pošljejo na katerokoli instanco
 - večja varnost podatkov - če je kontekst shranjen lokalno in instanca pade so podatki izgubljeni
@@ -27,6 +29,7 @@ Tipi prestreznikov:
 Ni zagotovila, da se konstruktor razreda proži $\rightarrow$ anotacija metod v razredu:
 - `@PostConstruct`: tik po instanciranju
 - `@PreDestroy`: tik pred uničenjem
+<br><br><br><br><br><br>
 ### JTA in transakcije
 Transakcija: zaporedje ukazov
 - bodisi izvedemo v celoti (commit)

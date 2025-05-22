@@ -1,4 +1,3 @@
-Intel Architecture 32b
 ==Moorov zakon==: podvojitev št. tranzistorjev na čipih vsaki 2 leti
 ## Arhitektura
 ### Pomnilnik in registri
@@ -17,14 +16,13 @@ Razširjanje starih registrov v nove in nove
 - ==Registrsko posredno==: dostop do pomnilnika preko naslova iz registra (npr. `mov ebx,[ebx+5]`)
 ### Formati ukazov
 ![[IA 32 oz. x86-Image-1.png|500]]
-==Prefix==: način delovanja ukaza
-(npr. F2: REP $\rightarrow$ ukaz ponovi ECX-krat)
-==Opcode==: možno več opcode-ov za isti ukaz - opcije
-(npr. ADD: 000000ds $\rightarrow$ d=direction (pomnilnik, register), s=size(8b, 16/32b))
+==Prefix==: način delovanja ukaza (npr. F2: REP $\rightarrow$ ukaz ponovi ECX-krat)
+==Opcode==: možno več opcode-ov za isti ukaz - opcije (npr. ADD: 000000ds $\rightarrow$ d=direction (pomnilnik, register), s=size(8b, 16/32b))
 ==Mod R/M==:
 - ==Mod==: način naslavljanja
 - ==Reg==: katere registre bomo uporabili
 - ==R/M==: način uporabe registrov
+
 ==SIB==: UN = odmik + scale\*index + base
 ==Odmik==: odmik
 ==Immediate==: operand
@@ -40,23 +38,22 @@ Razširjanje starih registrov v nove in nove
 Shranjevanje 32b vrednosti lokalnih spremenljivkih in rezultatov
 ESP kaže na vrh sklada - zadnje odloženi element
 Ukaza:
-- PUSH <reg32/mem/const32> $\rightarrow$ ESP -= 4, operand odloži na ESP
-- POP <reg32/mem> $\rightarrow$ vrednost na ESP shrani v operand. ESP += 4
+- `PUSH <reg32/mem/const32>` $\rightarrow$ ESP -= 4, operand odloži na ESP
+- `POP <reg32/mem>` $\rightarrow$ vrednost na ESP shrani v operand, ESP += 4
+<br><br><br><br><br>
 #### Podprogrami - calling convention
 1. Stanje sklada tik pred klicem funkcije:
-![[IA 32 oz. x86-Image-2.png|200]]
+![[IA 32 oz. x86-Image-2.png|180]]
 2. `JUMP ime_podprograma`
 3. `push ebp`, `mov ebp,esp`, `sub esp,20`
-![[IA 32 oz. x86-Image-3.png|200]]
+![[IA 32 oz. x86-Image-3.png|180]]
 4. Pridobivanje:
     - i-te lokalne spremenljivke: `mov eax,[ebp-4*(i+1)]`
     - i-tega parametra: `mov eax,[ebp+8+i*4]`
-5. Rezultat podprograma shranimo v eax
+5. Rezultat podprograma shranimo v `eax`
 6. `push esp,ebp`, `pop ebp` $\rightarrow$ ESP vrnemo na EBP in pop na povratni naslov
 ### Zastavice
-Opisujejo stanje procesorja
-- nastavljajo se kot posledica operacij ali ročno
-- shranjene v registru `FLAGS=EFLAGS:RFLAGS`
+Opisujejo stanje procesorja, nastavljajo se kot posledica operacij ali ročno, shranjene v registru `FLAGS=EFLAGS:RFLAGS`
 #### Kontrolne zastavice
 ==DF== (Direction Flag): vpliva na smer "auto-increment" operacij (npr. kopiranje big ali little endian)
 - `DF=0` $\rightarrow$ od spodnjega proti zgornjemu / `DF=1` $\rightarrow$ od zgornjega proti spodnjemu
@@ -65,8 +62,6 @@ Opisujejo stanje procesorja
 ==SF== (Sign Flag): zadnji rezultat < 0 $\rightarrow$ `SF=1`
 ==PF== (Parity Flag): spodnjih 8b rezultsts ima sodo enic $\rightarrow$ `PF=1`
 ==CF== (Carry Flag) / ==OF== (Overflow Flag): napačen rezultat prejšnje nepredznačene / predznačene aritmetične operacije
-#### Skočni ukazi
-![[IA 32 oz. x86-Image-4.png]]
 ### Direktive za deklaracijo in inicializacijo
 ==DB== (Declare Byte) / ==DW== (Declare Word) / ==DD== (Declare Double)
 - `a db 64` $\rightarrow$ `char a = 64`
@@ -75,10 +70,8 @@ Opisujejo stanje procesorja
 - `d dd 100 dup(0)` $\rightarrow$ `int d[100]` + inicializacija na 0
 - `str db 'hello',0` $\rightarrow$ `char str[] = "Hello"` (`[H,e,l,l,o, \0]`)
 ### Sistemski klici
-- kličemo prekinitev `int 0x80`
-- številka sistemskega kilca v `eax`
-- parametri v ostalih registrih
-![[IA 32 oz. x86-Image-5.png|500]]
+Kličemo prekinitev `int 0x80`: številka sistemskega kilca v `eax`, parametri v ostalih registrih
+![[IA 32 oz. x86-Image-5.png|400]]
 ### Sintaksa Intel vs AT&T
 - Posebni znaki pred operandi (`push 4` $\rightarrow$ `pushl $4`)
 - Vrstni red operandov (`add eax,4` $\rightarrow$ `addl $4,%eax`)
