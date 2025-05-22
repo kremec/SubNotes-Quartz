@@ -20,4 +20,8 @@ title: FRI UNI
 [[Porazdeljeni sistemi (PS)]]
 [[Postopki razvoja programske opreme (PRPO)]]
 #### 3 - 2
+[[Analiza algoritmov in hevristično reševanje problemov (AAHRP)]]
 [[Prevajalniki (P)]]
+[[Tehnologija programske opreme (TPO)]]
+[[Organizacija in management (OIM)]]
+[[Programiranje specifičnih platform (PSP)]]
