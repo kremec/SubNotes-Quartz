@@ -27,7 +27,7 @@ Coroutines in composable functions started inside `LaunchedEffect` - composable 
 #### Navigation
 Single Activity
 - NavHost component
-- NavHostController created and remembered with `rememberNavController()`, then calling `navigate()` with Destination route as parameter
+- NavHostController created and remembered with `rememberNavController()`, call `navigate()` with Destination route as parameter
 - Destinations (usually) defined in a separate class
 - NavigationBar tied to routes of NavHostController, modifies the content of NavHost component
 

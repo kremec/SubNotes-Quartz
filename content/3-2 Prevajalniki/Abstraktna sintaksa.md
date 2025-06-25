@@ -1,4 +1,3 @@
-## Teorija
 Vhod: drevo izpeljav
 Izhod: abstraktno sintaksno drevo
 
@@ -15,16 +14,17 @@ Prevajalnik, ki uporablja abstraktna sintaksna drevesa, pa lahko izvaja posamezn
 LL algoritem prevajanja vedno pozna trenutno lokacijo simbola, ker dela v smeri $\downarrow$
 ### Vzorec obiskovalcev
 Delitev definicij kasnejših akcij (npr. generacija kode, preverjanje tipov, optimizacije, ... ) od definicij tipov vozlišč abstraktnega sintaksnega drevesa
-## Implementacija
-ANTLR omogoča specifikacijo semantičnih akcij zraven produkcij sintakstne gramatike
-- $A\rightarrow X_1\ ...\ X_n$
+### ANTLR
+ANTLR omogoča specifikacijo semantičnih akcij zraven produkcij sintakstne gramatike ($A\rightarrow X_1\ ...\ X_n$)
 
-> [!example]
+> [!example] Primer
 > Primer stavka za nadaljne primere: `num * id + id * (num + id)`
 > 
 > Abstraktno sintaksno drevo:
 > ![[Abstraktna sintaksa-Image-1.png|150]]
-### Levo-rekurzivna / LR gramatika
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+#### Levo-rekurzivna / LR gramatika
 Uvedemo podedovan atribut AST, atribute računamo v smeri $\uparrow$
 - `attr(A) = f( attr(X1), ..., attr(Xn) )` ... vrednost atributov na levi je vedno odvisna od vrednosti atributov na desni
 
@@ -39,9 +39,8 @@ Uvedemo podedovan atribut AST, atribute računamo v smeri $\uparrow$
 > F -> num      -    F.ast = num
 > F -> ( E )    -    F.ast = E.ast
 > ```
-> Drevo izpeljav za zgornji stavek:
 > ![[Abstraktna sintaksa-Image-2.png|200]]
-### LL(1) kompatibilna gramatika
+#### LL(1) kompatibilna gramatika
 Uvedemo podedovan atribut AST, atribute računamo v smeri $\downarrow$
 - `attr(Xk) = f( attr(A), attr(X1), ..., attr(Xk-1) )`
 
@@ -58,5 +57,4 @@ Uvedemo podedovan atribut AST, atribute računamo v smeri $\downarrow$
 > F -> num        -    F.ast = num
 > F -> ( E )      -    F.ast = E.ast
 > ```
-> Drevo izpeljav za zgornji stavek:
 > ![[Abstraktna sintaksa-Image-3.png|200]]

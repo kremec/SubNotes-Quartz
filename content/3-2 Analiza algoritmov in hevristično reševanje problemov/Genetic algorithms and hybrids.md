@@ -1,14 +1,16 @@
-Evolution as algorithm: progress with adaptation $\rightarrow$ learning with optimization $\rightarrow$ survival of the fittest (competition of agents)
-- parallelization with parallelized population simulations
+==Genetic algorithms== sample solution space and guide search where probability of better solutions is larger using competition of agents
+- Population size: large $\rightarrow$ slow computation, small $\rightarrow$ not enough agents (normally 20 - few thousand agents)
+- Selection method - probability of performing crossover (normally ~$0.9$) / mutation (normally ~$0.1$)
+- Stopping criteria (eg. number of generations, target fitness, availability of computational resources, ...)
 
-Problems: non-accurate abstraction of real environment, (over)specialization for local extremes
-Where to use it:
-- many local extremes
-- having just fitness information (cannot compute gradients)
-- no specialized methods (for given problem)
-- ==multiobjective optimization problems==: fitness function with several parameters
-	- ==Pareto optimal solution==: no possible improvement of one criteria without getting worse on others
+Pros:
+- faster searching of large search spaces with many local extremes, parallelization of population simulations
+- easy algorithm after defining representation and fitness function
+- no specialized methods (for given problem) / having just fitness information (cannot compute gradients)
 
+Cons:
+- randomized $\rightarrow$ not optimal, can still get stuck on local maxima with possible (over)specialization for local extremes
+- non-accurate abstraction of real environment
 #### Evolutionary program template
 1. Generate population of agents
 2. Loop while condition is not satisfied (eg. leaderboard updated for some time / ...)
@@ -17,11 +19,7 @@ Where to use it:
 	3. Create new agents by combining the candidates
 	4. Replace old agents with new ones
 
-![[Genetic algorithms and hybrids-Image-1.png|400]]
-### Genetic algorithms
-==Genetic algorithms== sample solution space and guide search where probability of better solutions is larger
-Pros: faster searching of large search spaces, easy algorithm after defining representation and fitness function
-Cons: randomized $\rightarrow$ not optimal, can still get stuck on local maxima
+![[Genetic algorithms and hybrids-Image-1.png|350]]
 #### Gene representation
 Define:
 - ==data structure==: bit vector / numeric vector / string / tree
@@ -41,6 +39,7 @@ Define:
 >  Parent: 0110
 >  Child: 0010
 >- ==Lamarckian mutation==: searching for locally best mutation
+><br>
 
 >[!example] Numeric vector representation
 >Crossover operation:
@@ -57,6 +56,7 @@ Define:
 >- Replace random dimension with random number
 >- Gaussian mutation: $c=x_i+N(0, \sigma)$
 >- Differential evolution
+><br>
 
 >[!example] Tree representation
 >Crossover operation:
@@ -66,7 +66,12 @@ Define:
 >
 >Mutation operation:
 >- Switch $k$ nodes in path
+><br>
+
+==Neural networks==: Evolving neurons, weights and topology of neural network
 #### Selection
+==Multiobjective optimization problems==: fitness function with several parameters
+- ==Pareto optimal solution==: no possible improvement of one criteria without getting worse on others
 ##### Proportional selection
 Each agent has a probability of being selected based on fitness: $p_i=\frac{f_i}{\sum f_i}$
 Choose slot with random generated number $\in(0,1)$
@@ -86,17 +91,3 @@ Replacement of:
 - only worst ones
 - ==elitism==: keeping the top agents of population - prevent losing good genes
 - local elitism: children replace parents if they are better
-#### Parameters
-- Encoding
-- Population size: large $\rightarrow$ slow computation, small $\rightarrow$ not enough agents (normally 20 - few thousand agents)
-- Selection method - probability of performing crossover (normally ~$0.9$) / mutation (normally ~$0.1$)
-- Stopping criteria (eg. number of generations, target fitness, availability of computational resources, ...)
-#### Neural networks
-Evolving:
-- neurons
-- weights (instead of backpropagation and gradient descent)
-- topology / architecture of neural network (with matrix representation for small sets)
-#### Memetic algorithms
-Merge several ideas from combinatorial optimization:
-- initial populations start from local optima (gotten by local search)
-- elitism (reuse best agents, mutate others)

@@ -1,12 +1,10 @@
 Open-source, Linux-based OS optimized for ==battery-powered, low-memory devices== with access to various interfaces
 Versions: name and API version (eg. Android 12 supports both API 31 and API 32)
-### Android architecture
 ![[Android architecture-Image-1.png|400]]
 ##### Linux kernel services
-==Android automatically manages the process lifecycle== and interprocess communication
+==Android automatically manages the process lifecycle== and interprocess communication, file and network I/O, device drivers, ...
 Security management: apps run in ==sandboxes==, with ==permissions given by the user==
 Power management: screen dimming, process killing, JobScheduler API
-File and network I/O, device drivers, ...
 ##### Native libraries
 - System C library
 - Surface manager (composing windows), OpenGL (3D graphics)
@@ -25,6 +23,8 @@ Compilation process:
 Process VM - compilation of .apk to native machine code:
 - Dalvik (until 4.4 KitKat): ==trace-based just-in-time compilation== (saving storage space, but lower performance)
 - Android Runtime - ART (from 5.0 Lollypop): ==ahead-of-time compilation==
+
+Gradle: Automated build system, dependency manager, APK signing, ProGuard support
 ##### Application framework
 - Package manager: manage installed applications
 - Window manager: connect view to activity's window
@@ -34,8 +34,5 @@ Process VM - compilation of .apk to native machine code:
 - Resource manager: manage (programmatically accessible) application resources
 - Activity manager: manage application lifecycle and application stack navigation
 - View system: build application UI from a layout definition, slowly deprecated for Jetpack Compose
-#### System applications
+##### System applications
 Handling certain Intents
-### Gradle
-Automated build system, dependency manager, APK signing, ProGuard support
-- `build.gradle.kts`: one for each module, one for project

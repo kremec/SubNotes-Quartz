@@ -1,6 +1,6 @@
-## Teorija
 Vhod: abstraktno sintaksno drevo
 Izhod: abstraktno sintaksno drevo + atributi
+
 ==Atributi==: informacije pridružene vozliščem AST
 
 Pristopa:
@@ -45,6 +45,8 @@ Funkcije:
 - vrni definicijo danega imena / javi napako
 - začni doseg: začni novo področje dosega
 - končaj doseg: končaj trenutno področje dosega in se vrni v staro
+
+<br><br><br><br><br><br>
 ### Preverjanje tipov
 ==Tip==: množica vrednosti in operacije nad njo
 ==Statična/dinamična tipizacija==: v času prevajanja/izvajanja
@@ -58,13 +60,12 @@ Funkcije:
 
 Rekurzivni podatkovni tipi: kazalci (z znano velikostjo) namesto vrednost structa (neskončna struktura)
 
-Preverjanje uporabe simbolov s pravili tipov
 Simbolna tabela mora vsebovati preslikave:
 - ime spremenljivke, "formal-parameter name" - tip
 - ime metode - tip rezultata, parametri, lokalne spremenljivke
 - ime razreda - deklaracije spremenljivk in metod
 
-Potek v 2 fazah:
+Preverjanje uporabe simbolov s pravili tipov - potek v 2 fazah:
 1. Gradnja simbolnih tabel s pomočjo obiskovalcev (in preverjanje za večkratne deklaracije spremenljivk)
 2. Preverjanje tipov vseh stavkov in izrazov s pomočjo obiskovalcev
 
@@ -75,8 +76,7 @@ Pogosti triki:
 
 Obravnavanje napak: kljub napaki tipa naj se previden tip vseeno vpiše v simbolno tabelo za nadaljne preverjanje ostalih tipov.
 Vseeno pa ne pustimo napačnih programov v nadaljnje faze prevajanja.
-### Preverjanje levih vrednosti
-==Leva vrednost== prireditvenega stavka: vrednost z naslovom
+### Preverjanje levih vrednosti (vrednosti z naslovom)
 Potrebno, ker preverjanje tipov tega ne ujame
 > [!example] Primer
 > `2=3*5;` je s strani preverjanja tipov vredu

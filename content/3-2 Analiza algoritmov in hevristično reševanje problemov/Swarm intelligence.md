@@ -10,9 +10,7 @@ Rules:
 3. ==Flock centering==: stay near neighbors
    ![[Swarm intelligence-Image-3.png|200]]
 ### Ant colony optimization (ACO)
-Inspiration: ant colonies
-Metaheuristic abstraction of a (probabilistic) graph construction using heuristic information of pheromone trails
-
+Metaheuristic abstraction of a (probabilistic) graph construction using heuristic information of pheromone trails of ant colonies
 Individual agents (ants) deposit more pheromone along shorter paths to goal (as they pass it quicker and because of that more times) than other possibly longer paths
 - Agents still randomly choose one path of many (with probability based on pheromone density)
 - Pheromone evaporation ensures new / frequently used paths overshadow older / less used ones
@@ -34,19 +32,11 @@ $$
 - $\rho$ ... speed of evaporation
 - $C_{ij}$ ... cost of edge $i-j$
 
-Advantages:
-- positive feedback of greedy heuristic $\rightarrow$ rapid discovery of good solutions
-- distributed computation $\rightarrow$ avoid premature convergence
-
-Disadvantages:
-- possible slow convergence
-- no outside guidance towards good solutions
-#### Ant system improvements
-Centralized actions: improve search process bias with global information
-Max-min ant system: limit pheromone value, only best agents can add pheromones
+Pros: greedy heuristic with distributed computation $\rightarrow$ rapid discovery of good solutions, avoiding premature convergence
+Cons: possible slow convergence with no outside guidance towards good solutions
+<br><br>
 ### Particle swarm optimization (PSO)
-Inspiration: swarms of insects, flocks of birds, schools of fish
-Population-based stochastic optimization technique of optimal solution search
+Population-based stochastic optimization technique of optimal solution search with inspiration of swarms of insects, schools of fish, ...
 
 Individuals strive to improve themselves by learning from actions/behaviors of themselves and neighbors
 Only one operation calculation - ==velocity==: vector of position change
@@ -67,11 +57,5 @@ Algorithm:
 2. Update particle's representation: velocity with added random noise
 3. Move particle in direction of velocity
 
-Advantages:
-- insensitive to scaling, easy parallelization
-- simple implementation without derivative calculations
-- very few algorithm parameters
-
-Disadvantages:
-- fast premature convergence
-- slow convergence in refined search space - weak local search ability
+Pros: simple implementation (no derivatives) and easy parallelization
+Cons: fast premature convergence and slow convergence in refined search space - weak local search ability

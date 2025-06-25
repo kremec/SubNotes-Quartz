@@ -1,10 +1,10 @@
 ### Lifecycle awareness
 Activity lifecycle aware components from `androidx.lifecycle` package
 - ==LifecycleObserver== notifies when ==LifecycleOwner== moves through lifecycle stages
-### MVC to MVVM
-MVC drawback: Controller and View are tightly connected
+
+==MVC== drawback: Controller and View are tightly connected
 ![[Modern Android architecture-Image-1.png|500]]
-MVVM key points: ViewModel wraps the model with observable data View binds to
+==MVVM== key points: ViewModel wraps the model with observable data View binds to
 ![[Modern Android architecture-Image-2.png|500]]
 #### ViewModel class
 Problem: data handled in Activities/Fragments prone to loss and memory leaks (when component gets destroyed)

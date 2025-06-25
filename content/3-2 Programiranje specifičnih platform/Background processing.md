@@ -17,7 +17,7 @@ Stop services:
 ==Foreground service==: actions user sees/controls (eg. music player app) - shows ==sticky notifications==
 - Minimizing background processing + immediate guaranteed tasks
     - declare service type (eg. `mediaPlayback`, `camera|microphone`)
-    - declare permissions (`FOREGROUND_SERVICE` and `POST_NOTIFICATIONS` needed, `FOREGROUND_SERVICE_CAMERA` etc for specific service types)
+    - declare permissions (`FOREGROUND_SERVICE`, `POST_NOTIFICATIONS` needed, eg `FOREGROUND_SERVICE_CAMERA` for specific services)
 
 ==Bound services==: remain running as long as connection from client is established
 #### Broadcast
@@ -48,6 +48,7 @@ Launching Coroutines:
 - `launch()` $\rightarrow$ doesn't return result to caller
 - `async` $\rightarrow$ allows caller to wait for result with `await()`
 - `withContext` - switch to a different context (eg. from Main context launch Coroutine in Default context to change UI)
+<br><br><br><br><br><br>
 ### Periodic / Occasional Task Scheduling
 Long/frequent processing $\rightarrow$ inefficient usage of limited battery capacity $\rightarrow$ limit background processing
 #### Wake Lock
@@ -88,7 +89,7 @@ Request to be exempt from doze with `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` permi
 WorkManager CoroutineWorker: work is done in Coroutine $\rightarrow$ more efficient
 ### When to use what
 ==Best effort execution - Coroutines== (eg. update UI which may temporarily unavailable in background)
-==Guaranteed execution at current moment - ForegroundService, WorkManager== (eg. ensuring when user hits pay button the transaction is processed)
+==Guaranteed execution at current moment - ForegroundService, WorkManager== (eg. when user hits pay button the transaction is processed)
 ==Guaranteed eventual execution - WorkManager== (eg. reminding user to exercise)
 ==Guaraneteed execution at exact (periodic) times== - extremely difficult:
 - make app exempt from battery optimization

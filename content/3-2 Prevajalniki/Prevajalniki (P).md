@@ -12,3 +12,7 @@
 - [[Analiza aktivnosti spremenljivk]]
 - [[Dodeljevanje registrov]]
 - [[Zaključek]]
+
+[[RISC-V]]
+
+[[Stari izpiti]]

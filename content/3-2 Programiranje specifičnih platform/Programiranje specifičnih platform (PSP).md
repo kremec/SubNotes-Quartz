@@ -1,8 +1,7 @@
 # Predavanja
 - [[Overview of platforms]]
 - [[Embedded systems]]
-- [[Arduino platform]]
-- [[Mobile platform]]
+- [[Arduino vs mobile platform]]
 - [[Android architecture]]
 - [[Activity, Lifecycle, Intents]]
 - [[UI programming]]
@@ -13,3 +12,8 @@
 - [[Jetpack compose]]
 - [[Network Communication]]
 - [[Hybrid application development]]
+# Članki
+- [[Estrin - Embedded, Everywhere A Research Agenda for Networked Systems of Embedded Computers]]
+- [[Berners-Lee - The World Wide Web - Past, Present and Future]]
+
+[[Izpiski - stari izpiti]]

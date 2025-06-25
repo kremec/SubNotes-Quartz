@@ -27,6 +27,8 @@ $S$ ... speedup, $S_p=\frac{T_1}{T_P}$ ... speedup using $P$ processors
 > [!example] Fibonnaci
 >$T_1(n)=T_1(n-1)+T_1(n-2)+\Theta(1)$
 >$T_{\infty}(n)=max(T_{\infty}(n-1), T_{\infty}(n-2))+\Theta(1)=T_{\infty}(n-1)+\Theta(1)=\Theta(n)$
+
+<br><br><br><br><br><br>
 ### Limits of parallelization
 #### Amdahl's law
 Viewing single problem

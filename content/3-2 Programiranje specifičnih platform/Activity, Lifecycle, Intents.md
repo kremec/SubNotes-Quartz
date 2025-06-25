@@ -8,32 +8,25 @@ Activity states:
 - ==paused==: lost focus but still visible, maintains state and member information
 - ==stopped==: obscured by another activity, retains state and member information but can be terminated by OS
 
-![[Activity, Lifecycle, Intents-Image-1.png|300]]
+![[Activity, Lifecycle, Intents-Image-1.png|400]]
 - Activity exists: `onCreate()` $\rightarrow$ `onDestroy()`
 - Activity visible: `onStart()` $\rightarrow$ `onStop()`
 - Activity visible in the foreground: `onResume()` $\rightarrow$ `onPause()`
-##### onCreate()
-Activity is first created $\rightarrow$ initial state setup in `super.onCreate()`
-Passed Bundle contains Activity's previous state
-##### onStart()
-Activity is becoming visible $\rightarrow$ setup visible-only behaviour, load persistent application state, ...
-##### onRestart()
-Activity is becoming visible after being stopped $\rightarrow$ special processing
-##### onResume()
-Activity is visible and becoming interactable $\rightarrow$ foreground-only activities
-##### onPause()
-Activity loses focus - another Activity is about to start $\rightarrow$ fast commit of unsaved changes (or new Thread)
-##### onStop()
-Activity is no longer visible but still exists $\rightarrow$ release not-needed resources
-##### onDestroy()
-Activity is being destroyed (called by `finish()` in app / back button is pressed)
-Isn't called when OS kills the application
+
+`onCreate()`: Activity is first created $\rightarrow$ initial state setup in `super.onCreate()`, passed Bundle contains Activity's previous state
+`onStart()`: Activity is becoming visible $\rightarrow$ setup visible-only behaviour, load persistent application state, ...
+`onRestart()`: Activity is becoming visible after being stopped $\rightarrow$ special processing
+`onResume()`: Activity is visible and becoming interactable $\rightarrow$ foreground-only activities
+`onPause()`: Activity loses focus - another Activity is about to start $\rightarrow$ fast commit of unsaved changes (or new Thread)
+`onStop()`: Activity is no longer visible but still exists $\rightarrow$ release not-needed resources
+`onDestroy()`: Activity is being destroyed (called by `finish()` in app / back button is pressed), isn't called when OS kills the application
 ### Saving Activity state
 Not a part of the lifecycle
 Bundle stores: Acivity's view hierarchy state + custom key-value data
 `onSaveInstanceState()`/`onRestoreInstanceState()` and `onCreate()`
 ### Starting activities
 Create an Intent specifying the activity to start, pass to either `startActivity()` or `startActivityForResult` (expects result set by called Activity)
+<br><br>
 ## Task
 ==Task==: collection of Activities (not necessary from some application) user interacts with
 Manages the ==Activity backstack==: stack in order of being opened

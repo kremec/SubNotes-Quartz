@@ -1,19 +1,21 @@
 Vhod: zaporedje strojnih ukazov z začasnimi spremenljivkami + interferenčni graf spemenljivk
 Izhod: zaporedje strojnih ukazov z registri
 
-Barvanje interferenčnega grafa za $k$ registrov:
-1. Vozlišča z manj kot $k$ sosedi umaknemo z grafa na sklad (graf čim bolj zmanjšujemo)
-2. Vozlišče (npr. z največ povezavami) umaknemo z grafa na sklad in ga označimo za "morebitni preliv" (skupaj z vozliščem umaknemo tudi njegove povezave $\rightarrow$ drugim vozliščem znižamo stopnje $\rightarrow$ morda ima spet kako vozlišče manj kot $k$ povezav)
-   (Ponavljamo fazi 1 in 2 dokler ne prestavimo vseh vozlišč na sklad)
-3. S sklada prestavimo vozlišče v graf (neoznačena vozlišča se bodo zagotovo dala pobarvati, neoznačena pa le mogoče)
-	- Če se vozlišče da pobarvati, ga pobarvamo
-	- Če se vozlišča ne da pobarvati, ga pobarvamo (naključno/transparentno) in damo med "dejanske prelive"
-4. Če obstajajo "dejanski prelivi", popravim strojno kodo (spremenljivko shranjujem v klicnem zapisu namesto v registru, označimo da ne bomo več mogli obravnavati kot preliv) in ponovim fazi analize aktivnosti registrov in dodeljevanja registrov
-
-Registre iz MOVE ukazov (vrednost le premaknejo iz enega v drug register) poskusimo med barvanjem spraviti v isti register $\rightarrow$ odstranimo te (nepotrebne ukaze)
-Nasploh (razen v tem primeru) takih združevanj nočemo:
-- pregled parov vozlišč vzame svoj čas
-- graf postane gostejši $\rightarrow$ manj svobode pri dodeljevanju registrov
+Dodeljevanje registrov ~ barvanje interferenčnega grafa
+Faze dodeljevanja registrov (za $k$ registrov):
+1. ==Build==: Gradnja interferenčnega grafa
+   ==Neortogonalni registri==: "umetna" vozlišča registrov, spremenljivke povežemo s prepovedanimi (da ne morejo biti dodeljena vanje)
+2. ==Simplify==: Umik ne-MOVE vozlišč z < $k$ sosedi na sklad (graf čim bolj zmanjšujemo)
+3. ==Coalesce==: Združitev MOVE vozlišča v en register na sklad (če obstaja / če možno) $\rightarrow$ ==simplify==
+4. ==Freeze==: Izbris izbrane MOVE povezave (če obstaja) $\rightarrow$ ==simplify==
+5. ==Potential spill==: Umik vozlišča (npr. z največ povezavami) na sklad z označbo za "morebitni preliv" (skupaj z vozliščem izginejo tudi njegove povezave $\rightarrow$ drugim vozliščem se stopnje znižajo $\rightarrow$ kaka vozlišča imajo lahko spet < $k$ sosedov) $\rightarrow$ ==simplify==
+6. ==Dodeljevanje registrov==: Premik vozlišč s sklada na graf, neoznačena vozlišča se zagotovo da pobarvati, označena le mogoče:
+	- Vozlišče se da pobarvati $\rightarrow$ barvanje
+	- Vozlišča se ne da pobarvati $\rightarrow$ barvanje z naključno/transparentno barvo in umestitev med "dejanske prelive"
+	
+	Če obstajajo "dejanski prelivi":
+	- popravek strojne kode: shranitev spremenljivke v klicnem zapisu namesto v registru
+	- ponovitev vseh faz analize aktivnosti registrov in dodeljevanja registrov
 ### Algoritmi združevanja MOVE ukazov
 #### Osnova
 Ne upoštevamo MOVE ukazov
@@ -27,15 +29,11 @@ Vozlišči $A$ in $B$ (povezani v MOVE ukazu) lahko združimo v $AB$, če za vsa
 - stopnja $T$ < $k$ (ali)
 - $T$ je tudi sosed $B$
 
->[!example] Primer
->![[Dodeljevanje registrov-Image-1.png]]
-### Faze
-![[Dodeljevanje registrov-Image-2.png]]
-
->[!example] Primer
->![[Dodeljevanje registrov-Image-3.png]]
-
-### Možni problemi
-#### Neortogonalni registri
-Za določene spremenljivke lahko zahtevamo, da se morajo obravnavati le v določenih registrih (npr. določen register za množenje)
-Rešitev: uvedba "umentnih" vozlišč inferenčnega grafa, ki predstavljamo registre, potrebne spremenljivke povežemo z vsemi ostalimi vozlišči registrov (zaradi česar ne morejo iti v tiste registre)
+>[!example] Dokaz s primerom
+>Cel graf $G$, $G'$ ... sosedi vozlišča $a$ s stopnjo < $k$:
+>![[Dodeljevanje registrov-Image-4.png|330]]
+>$G'$ takoj odstranimo (stopnje < $k$) $\rightarrow$ ostane graf $G-G'$
+>- Če $a$ in $b$ ne združimo: $G-G'$ se lahko pobarva s $k$ barvami
+>  ![[Dodeljevanje registrov-Image-5.png|240]]
+>- Če $a$ in $b$ združimo: $G-G'-\{a\}$ se tudi lahko pobarva s $k$ barvami
+>  ![[Dodeljevanje registrov-Image-6.png|200]]

@@ -7,20 +7,20 @@ Abstraktna hierarhija enostavna (enaka že več tisoč let):
 - ==lastniki==: upravljajo podjetje, načeloma ne delamo
   Interes: čim večji letni dobiček (vsaj 8%) $\rightarrow$ čim več dela s strani spodnjih slojev
 - ==managerji==: delavci z največ potenciala za vodenje/kontroliranje delavcev
-  Interes: čim hitrejše napredovanje po hierarhiji (in prepričanje delavcev, da delajo v njihov interes)
+  Interes: čim hitrejše napredovanje po hierarhiji (in prepričanje delavcev, da delajo v njihov interes), stabilnost podjetja (izogibanje prodaji in posledično reorganizacijskemu odpuščanju)
 - ==umski in fizični delavci==: delavci s fiksno mesečno plačo
-  Interes: čim manj delati, ne da jih odpustijo
+  Interes: čim manj delati, ne da jih odpustijo (zaradi slabih rezultatov)
 
 Problem: konflikt interesov slojev hierarhije (namesto racionala)
-Odpuščanja v podjetju:
-- slabi rezultati $\rightarrow$ odpuščanje delavcev
-- prevzem/prodaja podjetja $\rightarrow$ odpuščanje managementa (managerji zato želijo stabilno podjetje)
 #### Sistemi upravljanja
 ==Enotirni sistem==: upravni odbor (lastniki in managerji)
 ==Dvotirni sistem==: upravni odbor (managerji) in nadzorni odbor (lastniki)
 ### Management
 Nivoji managementa:
 - ==vrhnji management==: velikopotezne ideje za rast podjetja, pregled nad vsemi oddelki
+	- postavljanje organizacijskih ciljev
+	- razvoj strategije
+	- določitev ustrezne oblike organizacije in prilagajanje okolju
 - ==srednji management==: predstavitev svojega oddelka kot najbolj pomembnega in uspešnega
 - ==nižji management==: nižanje stroškov in višanje produktivnosti
 
@@ -35,17 +35,13 @@ Ocenjevanje managementa:
 - ==učinkovitost==: z minimalnimi stroški ustvariti čim več dobrin (koga lahko odpustimo, da še zmeraj funkcioniramo)
 - ==uspešnost==: ustvariti "prave" dobrine z visoko dodano vrednostjo
 
-Glavne odgovornosti vrhnega managementa:
-- postavljati organizacijske cilje
-- razviti strategijo
-- določiti ustrezno obliko organizacije in jo prilagajati okolju
-
 Ključne sposobnosti managerja:
 - ==konceptualne sposobnosti==: videnje širše slike $\rightarrow$ ideje in plani za uresničitev
 - ==koordinacijske sposobnosti==: koordinacija aktivnosti v podjetju
 - ==vodstvene sposobnosti==: sposobnost dela s sodelovci, mentorstvo in motivacija
 - ==tehnične sposobnosti==: uporaba orodij in tehnik specializiranih področij
 - ==politične sposobnosti==: pridobitev sledilcev in vzpostavljanje močnih vez
+<br><br><br><br>
 ## Funkcija planiranja
 ==Planiranje==: določanje ciljev organizacije in sredstev za njihovo uresničitev
 
@@ -75,23 +71,22 @@ Zgodovinsko:
 #### Analiza okolja
 SWOT analiza:
 
-|                     | Prednosti                     | Slabosti                                                           |
-| ------------------- | ----------------------------- | ------------------------------------------------------------------ |
-| **Notranje okolje** | Osrednje sposobnosti podjetja | Težave v verigi ustvarjanja dodane vrednosti, pomanjkanje sinergij |
-| **Zunanje okolje**  | Mednarodne in nacionalne      | Mednarodne in nacionalne                                           |
+|                     | Prednosti                     | Slabosti                                     |
+| ------------------- | ----------------------------- | -------------------------------------------- |
+| **Notranje okolje** | Osrednje sposobnosti podjetja | Težave v verigi ustvarjanja dodane vrednosti |
+| **Zunanje okolje**  | Mednarodne in nacionalne      | Mednarodne in nacionalne                     |
 #### Določitev strategij
 na podlagi SWOT analize
 ==Strategija==: pot do željenih ciljev, zapisana v starteškem načrtu
 1. ==Nivo podjetja==: določitev panog za prihodnje poslovanje
 2. ==Nivo strateške poslovne enote==: določitev konkurenčnih prednosti v izbrani panogi
 ##### Določitev strategij podjetja
-BCG matrika:
+BCG matrika $\rightarrow$ želimo najti proizvode v razdelku zvezde - produkte v začetni fazi cikla izdelka z velikim trgom
 
 |                                            | LOW relative market share                                                                                                                                                                        | **HIGH relative market share**                                                                               |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | **HIGH annual real rate of market growth** | (Vprašaj)<br>**Earnings**: low, unstable, growing<br>**Cash flow**: negative<br>**Strategy**: analyze to determine whether a business can be grown into a star, or will it degenerate into a dog | (Zvezda)<br>**Earnings**: high, stable, growing<br>**Cash flow**: neutral<br>**Strategy**: invest for growth |
 | **LOW annual real rate of market growth**  | (Pes)<br>**Earnings**: low, unstable<br>**Cash flow**: neutral or negative<br>**Strategy**: divest                                                                                               | (Krava)<br>**Earnings**: high, stable<br>**Cash flow**: high, stable<br>**Startegy**: milk                   |
-Želimo najti proizvode v razdelku zvezde - produkte v začetni fazi cikla izdelka z velikim trgom
 ##### Določitev strategij strateške poslovne enote
 ==Porterjeve generične strategije== oblikovanja konkurenčne prednosti:
 - ==stroškovna strategija==: cilj imeti cenejši izdelek od konkurence $\rightarrow$ ne bo kupovala npr. elita
@@ -114,6 +109,7 @@ Izvedba se mora skladati z marketingom - obljubljeno izkušnjo
 Demingov PDSA model:
 ![[3-2 Organizacija in management/Organizacija in management podjetja-Image-2.png|400]]
 Konflikti v podjetjih se rešujejo s preoblikovanjem iz konflikta 1:1 v 1:ostali - če se posameznik ne drži dogovorov cele skupine, je v konfliktu z vsemi (namesto le s šefom) $\rightarrow$ medsebojna kontrola posameznikov znotraj skupine
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 ## Funkcija organiziranja
 ==Organizacijska struktura==: določitev združevanja posameznikov v oddelke, oddelke pa v celotno organizacijo - kadrovska komunikacija, koordinacija posameznikov / skupin, tehnična delitev dela, motivacija, ...
 Namen: aktivacija vseh resursov podjetja (znanje, kapital, ...)
@@ -156,6 +152,7 @@ Organizacija ~ odprt sistem, razčlenjen na podsisteme, ki ustvarjajo dodano vre
 
 Kritike:
 - vseh zaposlenih ne moremo obravnavati enako (20% najboljših naredi 80% dela)
+<br><br><br><br><br><br><br><br><br><br>
 ### Organizacijska struktura
 |                            | Mehanska          | Organska                              |
 | -------------------------- | ----------------- | ------------------------------------- |
@@ -188,6 +185,7 @@ Slabosti:
 	- otežena koordinacija med različnimi divizijami
 	- podvajanje oddelkov in znanj med divizijami
 - specializacije so drage (managerji za vsako divizijo)
+<br><br><br><br><br><br>
 #### Projektna organizacijska struktura
 ![[Organizacija in management podjetja-Image-5.png|400]]
 2 nivoja: generalni direktor, direktorji oddelkov
@@ -225,6 +223,7 @@ Prednosti:
 Slabosti:
 - podvajanje dela in konkurenca med procesi $\rightarrow$ neučinkovitost pri večjih podjetjih
 - možno razvrednotenje mnenj ekspertov zaradi poudarka na celoten proces
+<br>
 #### Mreža (virtualna) organizacijska struktura
 ![[Organizacija in management podjetja-Image-8.png|400]]
 Prednosti:
@@ -243,7 +242,8 @@ Primernost je odvisna od:
 - dobaviteljev in distributerjev (pogajalska moč)
 - kupcev, konkurence, zaposlenih, okolja (zunanji in notranji pritiski)
 
-![[Organizacija in management podjetja-Image-9.png|500]]
+![[Organizacija in management podjetja-Image-9.png|400]]
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 ## Funkcija vodenja
 Vodenje: sposobnost angažiranja drugih za dosegovanje skupnih/lastnih ciljev
 ### Modeli vodenja
@@ -281,7 +281,8 @@ Prilagoditev vodenja glede na motiviranost in kompetentnost sodelavcev $\rightar
 - ==mentorstvo== - razlaga: podrejeni ne znajo, a hočejo
 - ==sodelovanje== - izmenjava idej: podrejeni znajo, a nočejo
 - ==delegiranje== - prepustitev odločitev: podrejeni znajo in hočejo
-#### Odnos vodja-sledilec
+<br><br>
+### Odnos vodja-sledilec
 Vodenje je stvar odnosa vodja-sledilec:
 - ==Transakcijski vodja==: izmenjava medsebojnih koristi brez globljega odnosa
 - ==Transformacijski vodja==: njegov odnos do sodelavcev nanje vpliva motivacijsko, da interese kolektiva postavijo pred osebne interese
@@ -292,15 +293,83 @@ Teorije motivacije - razumevanje motivacije sledilcev
 #### Vsebinske teorije motivacije
 Kaj motivira obnašanje
 ##### Maslow-ova motivacijska teorija
-5 hierarhičnih skupin potreb:
-- samouresničevanje
-- samospoštovanje
+==Hierarhične skupine potreb==:
+- samouresničevanje (usmerjeno navznoter - zadovoljstvo sam s seboj)
+- samospoštovanje (usmerjeno navzven - ego primerjave z drugimi)
 - socialne potrebe
 - potrebe po zabavi
 - varnost in fiziološke (primarne) potrebe
+
+Vodja za vsakega podrejenega identificira stopnjo v piramidi, in v skupini omogoči rituale, ki to stvar ponujajo $\rightarrow$ zaposleni ne bo želel biti izključen
+
+Kasnejše raziskave piramido ovrgle: vsak ima svojo piramido, ki se skozi čas spreminja (ne more biti posplošeno za vse)
 ##### Herzbergova dvofaktorska teorija
+==Motivatorji==: dejavniki zadovoljstva zaradi vsebine dela
+- zanimivo delo (samouresničevanje)
+- delo predstavlja izziv (samospoštovanje)
+- odgovornost
+- priznanje za dobre rezultate
+- vključenost v odločanje  (socialne potrebe)
+- možnost napredovanja
+- pomen dela za institucijo
+
+==Higieniki==: dejavniki nezadovoljstva zaradi konteksta/okolja dela
+- varnost službe
+- višina plače
+- dodatne ugodnosti
+- pogoji dela
+- dopust
+
+|                 | Motivatorji +                       | Motivatorji -                                                  |
+| --------------- | ----------------------------------- | -------------------------------------------------------------- |
+| **Higieniki +** | Visoka motivacija<br>Malo pritožb   | Nizka motivacija<br>Malo pritožb<br>(zaposleni pride po plačo) |
+| **Higieniki -** | Visoka motivacija<br>Veliko pritožb | Nizka motivacija<br>Veliko pritožb                             |
 ##### McClellandova motivacijska teorija
+Vrste potreb:
+- ==Potreba po dosežkih== (idealno 80%): perfekcionisti, ki želijo konkretno povratno informacijo glede rezultatov dela, ki predstavlja izziv
+- ==Potreba po pripadnosti== (idealno 15%): klepetulje, ki želijo biti priljubljeni in razumevanje med sodelavci, dobri v skupinskem delu, ne marajo sprememb vrednot zaradi strahu pred zavrnitvijo
+- ==Potreba po moči== (idealno 5%): control freaki, ki želijo ugled, moč in nadzor nad sodelavci, uživajo v tekmovanjih in izražanju statusa
+<br><br><br>
 #### Procesne teorije motivacije
 Kako motivirati obnašanje
 ##### Teorija enakosti
+==Zaposleni za vse sodelavce primerjajo razmerje vnosa in iznosa== (npr. koliko delajo in koliko zaslužijo), in želijo isto dobro ali boljše razmerje zase:
+- šef mora ostale z boljšim razmerjem potlačiti
+- sebi zmanjša vnos (npr. delo)
+
+Skupine ljudi:
+- ==dobrodelni==: pripravljeni za delo, četudi ostali delajo manj
+- ==občutljivi==: zahtevajo poštenost za vse, sicer bodo oni delali manj
+- ==zaverovani vase==: zase normalizirajo manjši vnos od ostalih
 ##### Teorija pričakovanja
+$$
+motivacija=pričakovanje\ *\ instrumentalnost\ *\ valenca
+$$
+- ==pričakovanje==: prepričanje, da bo z naporom uresničil cilje
+- ==instrumentalnost==: prepričanje, da bo dobil nagrado za dosežene cilje
+- ==valenca==: prepričanje, da bo dobljena nagrada zadostna
+## Funkcija kontrole
+==Kontroliranje==: Zbiranje in sporočanje informacij o učinkovitosti in uspešnosti delovanja organizacije odločevalcev
+Dimenziji kontrole:
+- ==vrsta kontrole==: okolje stabilno $\rightarrow$ kontrola obnašanja / okolje dinamično $\rightarrow$ kontrola rezultatov
+- ==čas kontrole==: kontrola pred procesom / kontrola med procesom / kontrola po procesu
+
+==Vnaprejšnja kontrola==: zagotavljanje kvalitetnih vhodnih človeških/materialnih virov za prepoznavo in preprečevanje odstopanj
+- Kontrola obnašanja: organizacijska kontrola
+- Kontrola rezultatov: anketiranje kupcev
+
+==Sprotna kontrola==: zagotavljanje usklajenosti tekočih aktivnosti s standardi (pričakovanimi rezultati)
+- Kontrola obnašanja: nadzor delavcev med delom
+- Kontrola rezultatov: dnevni napredek
+
+==Povratna kontrola==: zagotavljanje nagrajevanja dobrih obnašanj/rezultatov in ustavitev slabih
+- Kontrola obnašanja: zadovoljstvo kupcev
+- Kontrola rezultatov: profitnost in rast prodaje
+
+==Vertikalna kontrola==: centralizirana, omejuje informacije
+==Horizontalna kontrola==: decentralizirana - samokontrola med skupinami enakih, deli informacjie in pooblašča zaposlene
+
+|               | Zunanje okolje                                                     | Notranje okolje                                                 |
+| ------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| **Rezultati** | Finančni vidik - donosnost, dodatna vrednost                       | Vidik poslovnih procesov - kazalci inovacij, razvoja, trženja   |
+| **Obnašanje** | Vidik kupcev - zadovoljstvo, ohranjanje in pridobivanje naročnikov | Vidik učenja in rasti - kazalci usposobljenosti in napredovanja |

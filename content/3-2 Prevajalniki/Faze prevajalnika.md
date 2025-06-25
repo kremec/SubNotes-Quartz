@@ -3,7 +3,7 @@ Princip cevovoda:
 - izhod: ciljna koda zbirnika za specifičen procesor (npr. Intel/AMD/RISC-V/...)
 
 Faze zbiranja:
-![[Book - 1 - Introduction-Image-1.png]]
+![[Faze prevajalnika-Image-1.png||500]]
 1. ==Leksikalna analiza==: zaporedje znakov vhodne datoteke razbijemo v zaporedje ==leksikalnih simbolov==
 2. ==Sintaksna analiza==: po preverjanju zaporedja/strukture leksikalnih simbolov zgradi ==drevo izpeljav==
 3. ==Abstraktna sintaksa==: poenostavitev drevesa izpeljav v ==abstraktno sintaksno drevo==

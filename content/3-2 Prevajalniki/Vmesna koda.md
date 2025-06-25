@@ -1,4 +1,3 @@
-## Teorija
 Vhod: AST + atributi
 Izhod: vmesna koda za posamezne funkcije
 

@@ -13,4 +13,4 @@ Year 3 - Semester 1
 ## Izpiski
 [[Teorija]]
 [[Koda]]
-[[Stari izpiti]]
+[[3-1 Sistemska programska oprema/Stari izpiti]]

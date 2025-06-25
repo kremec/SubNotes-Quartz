@@ -1,9 +1,7 @@
 # Predavanja
 - [[Computational complexity]]
 - [[Divide and conquer]]
-- [[Solving linear recurrances with annihilators]]
 - [[Probabilistic Analysis and Randomized Algorithms]]
-- [[Amortized analysis of computational complexity]]
 - [[Computational complexity of multithreaded algorithms]]
 - [[Approximation algorithms]]
 - [[Linear programming]]
@@ -12,3 +10,5 @@
 - [[Genetic algorithms and hybrids]]
 - [[Swarm intelligence]]
 - [[Differential evolution and variants]]
+- [[Nature inspired metaheuristics]]
+- [[Machine learning for combinatorial optimization]]

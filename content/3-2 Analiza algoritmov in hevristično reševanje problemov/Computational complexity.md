@@ -13,7 +13,6 @@ $g(n)$ is asymptotical lower bound for $f(n)$ (at least $n$ instructions)
 $$
 \Omega(g(n))=\{f(n);\ \exists c,n_0>0,\ \forall n>n_0:\ 0\leq c*g(n)\leq f(n)\}
 $$
-==??NO ALTERNATIVE FORMULA??==
 #### Asymptotically tight bound $\Theta$
 $g(n)$ is asymptotical tight bound for $f(n)$ (approximately $n$ instructions)
 $$
@@ -38,22 +37,7 @@ $$
 $$
 f(n)=o(g(n)) \iff \lim_{n\to\infty}\frac{f(n)}{g(n)}=\infty
 $$
-## Analysis of algorithms
-Watching algorithm's complexity through resource requirements:
-- number of operations - time
-- memory consumption
-- network accesses
-
-Random-Access Machine: abstract machine for approximating hardware
-- uniprocessor, random access to memory locations
-- constant time for most operations, numbers take limited amount of memory
-- no parallelism, memory hierarchies (caches)
-
-In most cases:
-- only worst and average cases are important
-- only the fastest growing (asymptotically important) terms are important
-  ![[Computational complexity-Image-1.png|400]]
-## Properties of asymptotic bounds
+### Properties of asymptotic bounds
 Transitivity:
 $$
 \begin{aligned}
@@ -84,3 +68,19 @@ f(n)=o(g(n))&\iff g(n)=\omega(f(n))
 \end{aligned}
 $$
 $f(n)$ and $g(n)$ are not always in relation - either with $\Theta$/$O$/$\Omega$
+<br><br><br>
+### Analysis of algorithms
+Watching algorithm's complexity through resource requirements:
+- number of operations - time
+- memory consumption
+- network accesses
+
+Random-Access Machine: abstract machine for approximating hardware
+- uniprocessor, random access to memory locations
+- constant time for most operations, numbers take limited amount of memory
+- no parallelism, memory hierarchies (caches)
+
+In most cases:
+- only worst and average cases are important
+- only the fastest growing (asymptotically important) terms are important
+  ![[Computational complexity-Image-1.png|400]]

@@ -1,21 +1,14 @@
 Often for a single application, low price, highly reliable, resource efficiency
 ### Embedded system pipeline
 ![[Embedded systems-Image-1.png|400]]
-#### Intellectual Property Core (IP Core)
-==Reusable unit of logic/functionality== (eg. network / video / audio / bus protocol / ... chip)
-Cheap when produced in high volume - ==not implemented by hand==
-#### Field-Programmable Gate Array (FPGA)
-==Reconfigurable integrated circuit, programmable== logic blocks
-Hardware is "programmed" for specific functionality $\rightarrow$ ==better performance==
-#### MicroController Unit (MCU)
-==Scaled-down microprocessor==, connected to other components in a system
-Sends commands and receives data $\rightarrow$ ==needs to be programmed==
-#### Sensors
-Measure physical properties - convert them to electric signals
-Specifications: accuracy, sensitivity, sensing range, sampling interval, type (digital / analogue)
-#### Actuators
-Cause events to occur in the environment
-Driven by embedded system's signals, often requires extra power
+==Intellectual Property Core (IP Core)==: ==Reusable unit of logic/functionality== (eg. network / video / bus protocol / ... chip) $\rightarrow$ ==produced in high volume==
+==Field-Programmable Gate Array (FPGA)==: ==Reconfigurable/programmable integrated circuit== for specific functionality $\rightarrow$ ==better performance==
+==MicroController Unit (MCU)==: ==Scaled-down microprocessor== sending/receiving commands to connected components $\rightarrow$ ==needs to be programmed==
+==Sensors==: Measure physical properties - convert them to electric signals
+- Specifications: accuracy, sensitivity, sensing range, sampling interval, type (digital / analogue)
+
+==Actuators==: Cause events to occur in the environment
+- Driven by embedded system's signals, often require extra power
 ### Conversions
 #### Analogue-Digital Converter (ADC)
 Analogue input (eg. sensor) $\rightarrow$ digital output
@@ -31,6 +24,7 @@ ADC sampling rate - frequency of conversion and sending data - needs to be high 
 Digital input (from processor) $\rightarrow$ analogue output (eg. actuator)
 ==Pulse-Width Modulation==: simulating analogue output
 ![[Embedded systems-Image-2.png|400]]
+<br><br><br><br><br><br><br><br><br><br>
 ### Designing Embedded System Applications
 #### Selecting hardware
 Datasheets for complex components
@@ -55,12 +49,12 @@ Communication, managing tasks/processes and resource allocation
 ==Task==: smallest unit of execution, multiple tasks per process - ==fast switching==
 - Shared memory space $\rightarrow$ direct inter-task communication (shared variables)
 ![[Embedded systems-Image-3.png|350]]
-==OS is optional==:
-- embedded devices are often single-purpose
+
+==OS is optional==: embedded devices are often single-purpose
 - consumes resources (processing, memory, energy)
 
 ==OS is useful==:
 - easier programming and deployment (provides libraries)
 - task-resource allocation support (for complex apps)
 
-==Real-Time Operating System (RTOS)==: event driven OS with a scheduler for time sharing (eg. round-robin / fixed priority preeemptive scheduling / ... )
+==Real-Time Operating System (RTOS)==: event driven OS with a scheduler for time sharing (eg. round-robin / priority preeemptive scheduling / ... )

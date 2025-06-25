@@ -37,6 +37,8 @@ REST client using (OkHttp under the hood):
 - define model and REST operations
 - define converter and adapter
 - define authentication mechanisms
+
+<br><br><br><br>
 ### Best practices
 - Run network operations on a separate thread
 - Reduce amount of data transfers:
