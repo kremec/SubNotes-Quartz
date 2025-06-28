@@ -12,13 +12,19 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: 'posthog',
-      apiKey: 'phc_9lZclk4bYQhVjHSIgSwQfc18fGYMvCUWoOOlCJbbRhr',
-      host: 'https://us.i.posthog.com'
+      provider: "posthog",
+      apiKey: "phc_s5Cm679eQLiuffKw7dBFwz9kkO0dLYc3pVCdNObQcpO",
+      host: "https://eu.i.posthog.com",
     },
     locale: "en-US",
     baseUrl: "kremec.github.io/SubNotes-Quartz/",
-    ignorePatterns: [".obsidian", "Templates/*", "Tricks/*", "Tricks", "Videos, books & articles/*"],
+    ignorePatterns: [
+      ".obsidian",
+      "Templates/*",
+      "Tricks/*",
+      "Tricks",
+      "Videos, books & articles/*",
+    ],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
