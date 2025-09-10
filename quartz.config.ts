@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       host: "https://eu.i.posthog.com",
     },
     locale: "en-US",
-    baseUrl: "kremec.github.io/SubNotes-Quartz/",
+    baseUrl: "subbye.net/notes/",
     ignorePatterns: [
       ".obsidian",
       "Templates/*",
