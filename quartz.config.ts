@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       host: "https://eu.i.posthog.com",
     },
     locale: "en-US",
-    baseUrl: "subbye.net/notes/",
+    baseUrl: "subbye.net/notes",
     ignorePatterns: [
       ".obsidian",
       "Templates/*",
