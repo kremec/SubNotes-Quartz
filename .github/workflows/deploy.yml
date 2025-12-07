@@ -21,18 +21,29 @@ jobs:
         os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v6
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18.14
-      - name: Install Dependencies
+          node-version: 22
+          cache: "npm"
+
+      - name: Show Node and npm versions
+        run: |
+          node -v
+          npm -v
+
+      - name: Install dependencies
         run: npm ci
+
       - name: Build Quartz
         run: npx quartz build
+
       - name: List build output
         run: ls -l public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
